@@ -1,8 +1,10 @@
 'use strict';
 
+const hello = require('./_js/test-module');
+
 class Main {
 	constructor() {
-		console.log('hello');
+		hello();
 	}
 }
 

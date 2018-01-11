@@ -7,14 +7,13 @@
     "typed.js": "^2.0.6"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babelify": "^8.0.0",
     "browserify": "^15.1.0",
-    "through2": "^2.0.3"
+    "onchange": "^3.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "js": "browserify src/assets/_main.js -o dist/assets/main.js"
+    "js": "browserify src/assets/main.js -o dist/assets/main.js",
+    "watch:js": "onchange 'src/assets/main.js' -- npm run js"
   },
   "repository": {
     "type": "git",

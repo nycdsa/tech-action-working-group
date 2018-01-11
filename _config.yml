@@ -14,5 +14,5 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-
+exclude: ["**/*.js"]
 twitter: NYCDSA_TechWG
