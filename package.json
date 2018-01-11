@@ -9,11 +9,12 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babelify": "^8.0.0",
+    "browserify": "^15.1.0",
     "through2": "^2.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "js": "browserify src/assets/main.js -o dist/assets/main.js -t [ babelify --presets [ env react ] ]"
+    "js": "browserify src/assets/_main.js -o dist/assets/main.js"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,9 @@
 'use strict';
 
-const hello = require('./js/test-module');
+class Main {
+	constructor() {
+		console.log('hello');
+	}
+}
+
+new Main();

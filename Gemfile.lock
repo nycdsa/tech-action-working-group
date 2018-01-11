@@ -3,7 +3,6 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    browserify_rb (1.0.0)
     colorator (1.1.0)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
@@ -18,8 +17,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-browserify (1.1.1)
-      browserify_rb (~> 1.0.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -49,7 +46,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-browserify
 
 BUNDLED WITH
    1.16.0
