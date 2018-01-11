@@ -13,19 +13,19 @@
     .social-link {
         display: block;
         &.thorn-email {
-            background-image: url('images/social-email_lg_2x.png');
+            background-image: url('/assets/images/social-email_lg_2x.png');
             @include image-size(50px, 50px);
         }
         &.twitter {
-            background-image: url('images/social-twitter_lg_2x.png');
+            background-image: url('/assets/images/social-twitter_lg_2x.png');
             @include image-size(50px, 50px);
         }
         &.facebook {
-            background-image: url('images/social-facebook_lg_2x.png');
+            background-image: url('/assets/images/social-facebook_lg_2x.png');
             @include image-size(50px, 50px);
         }
         &.instagram {
-            background-image: url('images/social-instagram_lg_2x.png');
+            background-image: url('/assets/images/social-instagram_lg_2x.png');
             @include image-size(50px, 50px);
         }
     }

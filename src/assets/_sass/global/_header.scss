@@ -10,11 +10,11 @@
 	display: flex;
 	align-items: center;
 	.dsa-logo {
-		background-image: url('/images/nyc-dsa-logo_lg_2x.png');
+		background-image: url('/assets/images/nyc-dsa-logo_lg_2x.png');
 		@include image-size(125px, 125px);
 		margin: 0;
 		@include viewport(md) {
-			background-image: url('/images/nyc-dsa-logo_sm_2x.png');
+			background-image: url('/assets/images/nyc-dsa-logo_sm_2x.png');
 			@include image-size(65px, 65px);
 		}
 	}
@@ -35,24 +35,10 @@
 	margin: 0 auto;
 	.tech-action-logo {
 		display: block;
-		background-image: url('/images/rose_lg_2x.jpg');
+		background-image: url('/assets/images/rose_lg_2x.jpg');
 		@include image-size(150px, 225px);
 		margin: 0 auto;
 	}
-}
-
-
-* {
-  box-sizing: border-box;
-}
-nav {
-  padding: 30px;
-}
-nav ul {
-  float: right;
-}
-nav ul li {
-  display: inline-block;
 }
 
 @media screen and (max-width: 830px) {

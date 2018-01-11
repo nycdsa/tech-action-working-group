@@ -5,6 +5,19 @@ html, body {
 	font-weight: 400;
 }
 
+* {
+	box-sizing: border-box;
+}
+nav {
+	padding: 30px;
+}
+nav ul {
+	float: right;
+}
+nav ul li {
+	display: inline-block;
+}
+
 .more-link {
     text-align: center;
 }
