@@ -1,0 +1,16 @@
+title: Tech Action Working Group
+description: New York City Tech Action Working Group
+url: https://www.techaction.nyc
+
+source: src
+destination: dist
+permalink: /posts/:slug/
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+
+twitter: NYCDSA_TechWG

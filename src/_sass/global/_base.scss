@@ -1,0 +1,90 @@
+html, body {
+	font-family: 'ManifoldDSA', sans-serif;
+	line-height: 1.42;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.more-link {
+    text-align: center;
+}
+
+.subscribe-box {
+    border: #EC1F29 3px solid;
+    padding: 10px 30px 30px;
+    margin-top: 50px;
+}
+
+.about  {
+    text-align: center;
+}
+
+.glossary  {
+    text-align: left;
+}
+
+.glossary-item {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #EC1F27;
+}
+
+.glossary-item h2 {
+      text-transform: uppercase;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include viewport(md) {
+        max-width: 600px;
+    }
+    &.full-bleed {
+        max-width: 100%;
+        width: 100%;
+    }
+    &.thin {
+        max-width: 760px;
+        @include viewport(md) {
+            max-width: 600px;
+        }
+        @include viewport(sm) {
+            max-width: 400px;
+        }
+    }
+    &.vertical-center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.center {
+    text-align: center;
+}
+a {
+    color: $red;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $black;
+    }
+}
+.link-cta {
+    display: inline-block;
+    @include fluid-value(font-size, 18px, 24px);
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background-color: $red;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: color 0.33s ease, background-color 0.33s ease, border-color 0.33s ease;
+    &:hover {
+        color: white;
+        background-color: $black;
+    }
+}

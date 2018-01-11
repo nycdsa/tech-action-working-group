@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ site.title }}</title>
+    {% include meta.html %}
+    <link rel="stylesheet" href="/main.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  </head>
+  <body>
+    <div style="width:0;height:0;display:none">
+       <a href="/">
+      <svg href="/images/logo.svg" />
+         </a>
+    </div>
+    <header class="global-header">
+      <div class="header-nav">
+        <a href="https://www.socialists.nyc/" class="dsa-logo-link">
+          <figure class="dsa-logo"></figure>
+        </a>
+            <nav class="nav-list">
+  <input type="checkbox" id="nav" class="hidden"/>
+  <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+  <div class="nav-container">
+    <ul>
+      <li><a href="/" class="nav-item">home</a></li>
+      <li> <a href="/posts" class="nav-item">posts</a></li>
+      <li> <a href="/about" class="nav-item">about</a></li>
+      <li><a href="/archive" class="nav-item">archive</a></li>
+      <li> <a href="/glossary" class="nav-item">glossary</a></li>
+      <li><a href="http://eepurl.com/cDM-4D" target="_blank" class="nav-item link-cta">Subscribe</a></li>
+    </ul>
+  </div>
+</nav>
+      </div>
+      <div class="header-logo">
+        <a href="/" class="nav-item">{% include logo.svg %}</a>
+      </div>
+    </header>
+    <main class='container thin posts-container'>
+      {{ content }}
+      {% include subscribe.html %}
+    </main>
+    <footer class="footer">
+      <ul class="social-links-list">
+        <li class="social-links-item">
+          <a href="mailto:hello@thethorn.nyc" class="social-link thorn-email"></a>
+        </li>
+        <li class="social-links-item">
+          <a href="https://www.facebook.com/nycdsa" target="_blank" class="social-link facebook"></a>
+        </li>
+        <li class="social-links-item">
+          <a href="https://twitter.com/nycthorn" target="_blank" class="social-link twitter"></a>
+        </li>
+      </ul>
+      <div class="container thin center">
+        <p class="footer-paragraph spacing">Produced by the <a href="http://www.socialists.nyc/" target="_blank">NYC DSA Media Working Group</a> in collabortion with the <a href="http://www.dsausa.org/design_committee" target="_blank">DSA National Design Committee</a>. This website was designed and built with 100% donated DSA volunteer labor.</p>
+        <div class="row center">
+          <p class="footer-paragraph">Web Development by <a href="https://www.jeremiak.com/" target="_blank">Jeremia Kimelman</a> and <a href="http://www.seanmscanlan.com/" target="_blank">Sean Scanlan</a></p>
+        </div>
+      </div>
+    </footer>
+    {% include analytics.html %}
+  </body>
+</html>
