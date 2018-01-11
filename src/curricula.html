@@ -4,17 +4,16 @@ permalink: /curricula/
 ---
 
 <div class='posts-container'>
-  {% for page in site.posts limit:5 %}
-    <div class="post" id="post-{{ page.id }}">
-      {% include post-header.html %}
-      <article class="post-body">
-        <div class="post-html">{{ page.content | truncatewords: 150 }}...</div>
-        <div class="post-url">
-          <a href="{{page.url}}" class="post-link link-cta">Read more</a>
-        </div>
-      </article>
-    </div>
-  {% endfor %}
-  <div class="more-link"><a href="/archive" class="post-link link-cta">More Issues</a></div>
+	{% for page in site.posts %}
+		<div class="post" id="post-{{ page.id }}">
+			{% include post-header.html %}
+			<article class="post-body">
+				<div class="post-html">{{ page.content | truncatewords: 50 }}...</div>
+				<div class="post-url">
+					<a href="{{page.url}}" class="post-link link-cta">Read more</a>
+				</div>
+			</article>
+		</div>
+	{% endfor %}
 </div>
 
