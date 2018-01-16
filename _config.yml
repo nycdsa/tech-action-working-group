@@ -6,6 +6,9 @@ source: src
 destination: dist
 sass:
   sass_dir: assets/_sass
+browserify:
+  exts: ['.js']
+  command: "$(npm bin)/browserify src/assets/main.js -o dist/assets/main.js"
 permalink: /posts/:slug/
 defaults:
   -
@@ -14,5 +17,4 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-exclude: ["**/*.js"]
 twitter: NYCDSA_TechWG
