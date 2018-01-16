@@ -1,7 +1,7 @@
 ---
 issue: 1
-title: Test (blog)
-category: blog
+title: Test Again (curricula)
+category: curricula
 ---
 ## Test
 

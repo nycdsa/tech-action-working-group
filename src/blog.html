@@ -5,15 +5,17 @@ permalink: /blog/
 
 <div class='posts-container'>
 	{% for page in site.posts %}
-		<div class="post" id="post-{{ page.id }}">
-			{% include post-header.html %}
-			<article class="post-body">
-				<div class="post-html">{{ page.content | truncatewords: 50 }}...</div>
-				<div class="post-url">
-					<a href="{{page.url}}" class="post-link link-cta">Read more</a>
-				</div>
-			</article>
-		</div>
+		{% if page.categories contains 'blog' %}
+			<div class="post" id="post-{{ page.id }}">
+				{% include post-header.html %}
+				<article class="post-body">
+					<div class="post-html">{{ page.content | truncatewords: 50 }}...</div>
+					<div class="post-url">
+						<a href="{{page.url}}" class="post-link link-cta">Read more</a>
+					</div>
+				</article>
+			</div>
+		{% endif %}
 	{% endfor %}
 </div>
 
