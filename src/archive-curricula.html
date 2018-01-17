@@ -1,18 +1,15 @@
 ---
 layout: base
-permalink: /curricula/
+permalink: /archive/curricula/
 ---
 
 <div class='posts-container'>
-	{% for page in site.posts limit:5 %}
+	{% for page in site.posts %}
 		{% if page.categories contains 'curricula' %}
 			<div class="post" id="post-{{ page.id }}">
 				{% include post-header.html %}
 				<article class="post-body">
-					<div class="post-html">{{ page.content | truncatewords: 50 }}...</div>
-					<div class="post-url">
-						<a href="{{page.url}}" class="post-link link-cta">Read more</a>
-					</div>
+					<div class="post-html">{{ page.content }}</div>
 				</article>
 			</div>
 		{% endif %}
