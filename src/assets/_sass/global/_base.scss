@@ -1,10 +1,12 @@
+/**************
+* BASE STYLES
+***************/
 html, body {
 	font-family: 'ManifoldDSA', sans-serif;
 	line-height: 1.42;
 	font-size: 18px;
 	font-weight: 400;
 }
-
 * {
 	box-sizing: border-box;
 }
@@ -17,35 +19,17 @@ nav ul {
 nav ul li {
 	display: inline-block;
 }
-
-.more-link {
-    text-align: center;
+a {
+    color: $red;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $black;
+    }
 }
-
-.subscribe-box {
-    border: #EC1F29 3px solid;
-    padding: 10px 30px 30px;
-    margin-top: 50px;
-}
-
-.about  {
-    text-align: center;
-}
-
-.glossary  {
-    text-align: left;
-}
-
-.glossary-item {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    border-bottom: 2px solid #EC1F27;
-}
-
-.glossary-item h2 {
-      text-transform: uppercase;
-}
-
+/**************
+* HELPERS
+***************/
 .container {
     width: 90%;
     max-width: 1200px;
@@ -73,16 +57,12 @@ nav ul li {
         transform: translate(-50%, -50%);
     }
 }
-.center {
-    text-align: center;
+.block-center {
+	display: block;
+	margin: 0 auto;
 }
-a {
-    color: $red;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    &:hover {
-        color: $black;
-    }
+.text-center {
+    text-align: center;
 }
 .link-cta {
     display: inline-block;
@@ -100,4 +80,7 @@ a {
         color: white;
         background-color: $black;
     }
+}
+.hidden {
+	display: none;
 }
