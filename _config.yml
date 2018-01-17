@@ -5,9 +5,7 @@ source: src
 destination: dist
 sass:
   sass_dir: assets/_sass
-browserify:
-  exts: ['.js']
-  command: "$(npm bin)/browserify src/assets/main.js -o dist/assets/main.js"
+exclude: ['*.js']
 permalink: /posts/:slug/
 defaults:
   -
