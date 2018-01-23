@@ -1,10 +1,10 @@
 'use strict';
 
-const typed = require('./_js/typed');
+const example = require('./_js/example');
 
 class Main {
 	constructor() {
-		new typed();
+		example();
 	}
 }
 
