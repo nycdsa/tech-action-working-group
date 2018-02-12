@@ -43,9 +43,18 @@
 .post-title {
 	font-weight: 900;
 	@include fluid-value(font-size, 32px, 44px);
-	line-height: 1.2em;
+	line-height: 1.4em;
 	text-transform: uppercase;
 	margin-bottom: 1em;
+	text-align: center;
+	&:before {
+		content: '🌹';
+		display: block;
+	}
+	&:after {
+		content: '💻';
+		display: block;
+	}
 }
 .post-tags {
 	.post-tag {
