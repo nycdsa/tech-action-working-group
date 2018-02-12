@@ -21,8 +21,8 @@ White collar, blue collar, the whole shebang.
 That'll be the main topic for our next general meeting next Thursday! Here
 are the details:
 
->     Thursday, July 13th, at 7pm (lasting ~1h 45m)
->     114 W 26th Street (Manhattan), 4th Floor
+> Thursday, July 13th, at 7pm (lasting ~1h 45m)
+114 W 26th Street (Manhattan), 4th Floor
 
 
 The meeting will be focused on a **discussion of labor and labor organizing
