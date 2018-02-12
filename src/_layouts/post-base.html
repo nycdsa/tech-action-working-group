@@ -10,11 +10,12 @@
 <body>
 	<div style="width:0;height:0;display:none"><a href="/"><svg href="/assets/images/logo.svg" /></a></div>
 	{% include header.html %}
-	<main class="container">
+	<main class="container thin posts-container">
 		{{ content }}
 		{% include join.html %}
 	</main>
 	{% include footer.html %}
+	<script src="/assets/main.js"></script>
 	{% include analytics.html %}
 </body>
 </html>
