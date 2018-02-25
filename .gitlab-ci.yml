@@ -6,19 +6,12 @@ before_script:
   - npm install
 
 stages:
-  - build
   - deploy
-
-build_site:
-  stage: build
-  script:
-    - npm run build
-  only:
-    - master
 
 push_to_s3:
   stage: deploy
   script:
+    - npm run build
     - aws s3 sync dist s3://tech-action-working-group/ --delete --exclude "node_modules/*" --exclude "sass/*" --exclude ".git/*"
   only:
     - master
