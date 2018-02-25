@@ -1,0 +1,16 @@
+image: circleci/ruby:2-node
+
+before_script:
+  - bundle install
+  - npm install
+
+stages:
+  - build
+  - deploy
+
+build_site:
+  stage: build
+  script:
+    - npm run build
+  only:
+    - master
