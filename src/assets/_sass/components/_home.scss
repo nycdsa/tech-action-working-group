@@ -1,0 +1,16 @@
+.homepage-content {
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.posts-container {
+		width: 60%;
+		padding: 0 40px;
+	}
+	.twitter-container {
+		width: 40%;
+		padding: 0 40px;
+		height: 600px;
+		overflow: scroll;
+	}
+}

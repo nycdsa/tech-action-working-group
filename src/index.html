@@ -6,11 +6,26 @@ layout: base
 </section>
 <section class="section manifesto">
 	<div class="container thin">
-		<h1>This will contain the manifesto</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus corporis dignissimos, aliquam in vitae hic fugit facere ex reprehenderit nisi impedit laboriosam molestias eius ea porro, necessitatibus expedita numquam nemo.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eligendi tenetur, nulla architecto animi praesentium unde ex quod quas voluptatum vero delectus optio beatae ipsam inventore harum, numquam odit officiis.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nulla possimus libero, dignissimos voluptatum incidunt totam esse voluptas eligendi ad. Placeat repellendus, culpa laborum fugiat recusandae aliquid magnam expedita quo?</p>
 	</div>
 </section>
-<section class="section content">
+<section class="section homepage-content">
 	<div class="container">
+		<div class="posts-container">
+			{% for page in site.posts limit:1 %}
+				<div class="post" id="post-{{ page.id }}">
+					{% include post-header.html %}
+					<article class="post-body">
+						<div class="post-html">{{ page.content | truncatewords: 50 }}...</div>
+						<div class="post-url">
+							<a href="{{page.url}}" class="post-link link-cta">Read more</a>
+						</div>
+					</article>
+				</div>
+			{% endfor %}
+		</div>
 		<div class="twitter-container">
 			<a class="twitter-timeline" href="https://twitter.com/NYCDSATechWG?ref_src=twsrc%5Etfw">Tweets by NYCDSATechWG</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
