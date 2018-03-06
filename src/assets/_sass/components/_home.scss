@@ -1,16 +1,52 @@
+.homepage {
+	.section {
+		margin-bottom: 80px;
+		@include viewport(md) {
+			margin-bottom: 60px;
+		}
+		@include viewport(sm) {
+			margin-bottom: 40px;
+		}
+	}
+}
 .homepage-content {
 	.container {
 		display: flex;
 		justify-content: space-between;
+		@include viewport(md) {
+			display: block;
+		}
 	}
 	.posts-container {
 		width: 60%;
 		padding: 0 40px;
+		@include viewport(md) {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 60px;
+		}
+		@include viewport(sm) {
+			margin-bottom: 40px;
+		}
+		.post-title {
+			margin-top: 0;
+		}
 	}
 	.twitter-container {
 		width: 40%;
 		padding: 0 40px;
 		height: 600px;
 		overflow: scroll;
+		@include viewport(md) {
+			width: 100%;
+			padding: 0;
+		}
+	}
+}
+.manifesto {
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
