@@ -26,7 +26,7 @@ layout: base
 </section>
 <section class="section homepage-content">
 	<div class="container">
-		<div class="posts-container">
+		<div class="posts-container box">
 			{% for page in site.posts limit:1 %}
 				<div class="post" id="post-{{ page.id }}">
 					{% include post-header.html %}

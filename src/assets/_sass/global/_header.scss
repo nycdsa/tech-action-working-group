@@ -6,17 +6,13 @@
 	width: 90%;
 	top: 0;
 	left: 5%;
-	height: 140px;
+	height: 160px;
 	display: flex;
 	align-items: center;
 	.dsa-logo {
-		background-image: url('/assets/images/nyc-dsa-logo_lg_2x.png');
-		@include image-size(125px, 125px);
+		background-image: url('/assets/images/tech-action-logo_lg_2x.png');
+		@include image-size(90px, 142px);
 		margin: 0;
-		@include viewport(md) {
-			background-image: url('/assets/images/nyc-dsa-logo_sm_2x.png');
-			@include image-size(65px, 65px);
-		}
 	}
 	.nav-list {
 		margin-left: auto;
