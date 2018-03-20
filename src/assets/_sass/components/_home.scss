@@ -116,9 +116,15 @@
 		@include fluid-value(font-size, 34px, 110px);
 		font-weight: 900;
 		padding: 45px 80px 145px 80px;
+		transition: background-color 0.6s ease, color 0.6s ease;
+		transition-delay: 1s;
 		.large {
 			text-transform: uppercase;
 			display: block;
+		}
+		&.in-viewport {
+			background-color: $lavender;
+			color: $peach;
 		}
 		@include viewport(md) {
 			width: 100%;
@@ -242,7 +248,7 @@
 			background-image: url('/assets/images/rose-hi-def_lg_2x.png');
 			@include image-size(254px, 186px);
 			position: sticky;
-			top: 20px;
+			top: 60px;
 			float: right;
 		}
 	}
