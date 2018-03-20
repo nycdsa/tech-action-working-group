@@ -2,30 +2,60 @@
 layout: base
 ---
 <section class="section homepage-header">
-	<h1>This will contain the header animation intro whatever</h1>
-</section>
-<section class="section manifesto">
-	<div class="container thin">
-		<blockquote>
-			<p>If there is technological advance without social advance, there is, almost automatically, an increase in human misery, in impoverishment.</p>
-			<footer>— Michael Harrington, <em>The Other America</em>, 1962</footer>
-		</blockquote>
-		<h3 class="manifesto-header">Have you ever wondered...</h3>
-		<p>What is the role of labor in the tech industry?</p>
-		<p>What does class have to do with internet access?</p>
-		<p>How does Facebook make money?</p>
-		<p>Is Google reading my emails?</p>
-		<p>How does Big Tech influence economic, education, housing, and criminal justice policy?</p>
-		<h3 class="manifesto-header">How can I take control of the technology in my life instead of it controlling me?</h3>
-		<div class="red">
-			<p>The NYC Tech Action Working Group wants to help you find answers!</p>
-			<p>We're developing a socialist perspective on technology and society, creating alternatives to the status quo, and thinking up strategies to challenge the tech industry's growing power.</p>
-		</div>
-		<h1 class="manifesto-cta">Join us!</h1>
+	<div class="hero-wrapper">
+		<figure class="figure hero"></figure>
 	</div>
 </section>
 <section class="section homepage-content">
-	<div class="container">
+	<div class="container flex-container">
+		<div class="harrington-quote box">
+			<blockquote>
+				<p>If there is technological advance without social advance, there is, almost automatically, an increase in human misery, in impoverishment.</p>
+				<footer>— Michael Harrington, <em>The Other America</em>, 1962</footer>
+			</blockquote>
+		</div>
+		<img src="/assets/images/petal-drop.webp" class="petal-drop" alt="">
+	</div>
+	<div class="container flex-container">
+		<div class="wondered box">
+			<h1>Have you ever <span class="large">wondered...</span></h1>
+		</div>
+	</div>
+	<div class="container flex-container">
+		<div class="box labor small">
+			<figure class="figure labor"></figure>
+			<h3 class="box-text">What is the role of labor in the tech industry?</h3>
+		</div>
+		<div class="box labor small">
+			<h3 class="box-text">How does Big Tech influence economic, education, housing, and criminal justice policy?</h3>
+		</div>
+		<div class="box labor medium">
+			<figure class="figure labor"></figure>
+			<h3 class="box-text">What does class have to do with internet access?</h3>
+		</div>
+	</div>
+	<div class="container flex-container">
+		<div class="box labor medium">
+			<figure class="figure labor"></figure>
+			<h3 class="box-text">What is the role of labor in the tech industry?</h3>
+		</div>
+		<div class="box labor small">
+			<h3 class="box-text">How does Big Tech influence economic, education, housing, and criminal justice policy?</h3>
+		</div>
+		<div class="box labor small">
+			<figure class="figure labor"></figure>
+			<h3 class="box-text">What does class have to do with internet access?</h3>
+		</div>
+	</div>
+	<div class="ticker">
+		<h5 class="ticker-text">🌹 💻 The NYC DSA Tech Action Working Group wants to help you find answers 💻 🌹</h5>
+	</div>
+	<div class="container callout-section">
+		<h3 class="callout-text">We're developing a socialist perspective on technology and society,</h3>
+		<h3 class="callout-text">creating alternatives to the status quo,</h3>
+		<h3 class="callout-text">and thinking up strategies to challenge the tech industry's growing power.</h3>
+	</div>
+	<div class="container flex-container">
 		<div class="posts-container box">
 			{% for page in site.posts limit:1 %}
 				<div class="post" id="post-{{ page.id }}">
