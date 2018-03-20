@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bundle exec jekyll build && npm install && npm run js",
+    "build": "bundle exec jekyll build && npm run js",
     "watch": "parallelshell \"bundle exec jekyll serve\" \"npm run watch:js\"",
     "js": "browserify src/assets/main.js -o dist/assets/main.js",
     "watch:js": "parallelshell \"onchange 'src/assets/main.js' -- npm run js\" \"onchange 'dist/index.html' -- npm run js\""
