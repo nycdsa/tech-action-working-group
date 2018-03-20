@@ -36,6 +36,7 @@
 			font-size: 28px;
 			padding: 20px;
 			font-weight: 800;
+			line-height: 1.2;
 		}
 	}
 	.homepage-header {
@@ -122,6 +123,78 @@
 			background-size: cover;
 		}
 	}
+	.big-tech {
+		margin-left: -220px;
+		margin-top: 200px;
+		@include viewport(sm) {
+			margin: 0;
+		}
+	}
+	.vaporwave {
+		margin-left: -140px;
+		margin-top: 30px;
+		@include viewport(sm) {
+			margin-left: 0;
+		}
+		.figure {
+			background-image: url('/assets/images/vaporwave.webp');
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+		}
+		.box-text {
+			top: 270px;
+		}
+	}
+	.illuminati {
+		margin-top: -200px;
+		margin-left: 100px;
+		z-index: -1;
+		.figure {
+			background-image: url('/assets/images/illuminati.gif');
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-size: cover
+		}
+		.box-text {
+			top: 200px;
+		}
+	}
+	.nyancat {
+		margin-top: 180px;
+		.figure {
+			background-image: url('/assets/images/nyancat.gif');
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-size: cover
+		}
+		.box-text {
+			color: white;
+			top: 80px;
+		}
+	}
+	.vr {
+		margin-left: -180px;
+		.figure {
+			background-image: url('/assets/images/vr.webp');
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-size: cover
+		}
+	}
 	.ticker {
 		background-color: $purple;
 		margin-bottom: 400px;
@@ -131,7 +204,7 @@
 			font-size: 2vw;
 			text-align: center;
 			color: $red;
-			line-height: 100%;
+			line-height: 1;
 			padding: 40px 0;
 			display: block;
 		}
@@ -142,7 +215,7 @@
 			color: $yellow;
 			@include fluid-value(font-size, 30px, 90px);
 			font-weight: 600;
-			line-height: 1em;
+			line-height: 1;
 			margin-bottom: 2em;
 		}
 	}
