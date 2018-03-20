@@ -39,6 +39,11 @@
 			line-height: 1.2;
 		}
 	}
+	.scroll-trigger {
+		.box {
+			opacity: 0;
+		}
+	}
 	.homepage-header {
 		.hero-wrapper {
 			width: 80%;
@@ -206,6 +211,10 @@
 	.ticker {
 		background-color: $purple;
 		margin-bottom: 400px;
+		width: 100%;
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
 		.ticker-text {
 			font-family: monospace;
 			font-weight: 800;
@@ -213,8 +222,11 @@
 			text-align: center;
 			color: $red;
 			line-height: 1;
+			display: inline-block;
 			padding: 40px 0;
-			display: block;
+			width: 100%;
+			transform: translateX(-100%);
+			animation: ticker 15s linear infinite;
 		}
 	}
 	.callout-section {
@@ -224,7 +236,14 @@
 			@include fluid-value(font-size, 30px, 90px);
 			font-weight: 600;
 			line-height: 1;
-			margin-bottom: 2em;
+			padding-bottom: 2em;
+		}
+		.callout-rose {
+			background-image: url('/assets/images/rose-hi-def_lg_2x.png');
+			@include image-size(254px, 186px);
+			position: sticky;
+			top: 20px;
+			float: right;
 		}
 	}
 	.posts-container {
@@ -270,4 +289,17 @@
 			margin-top: 0;
 		}
 	}
+}
+/****************
+*
+* ANIMATIONS
+*
+*****************/
+@keyframes ticker {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }

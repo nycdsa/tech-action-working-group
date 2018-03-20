@@ -3,15 +3,6 @@
   "version": "1.0.0",
   "description": "new york city tech action working group",
   "main": "index.js",
-  "dependencies": {
-    "custom-scroll-animations": "^1.0.1",
-    "typed.js": "^2.0.6"
-  },
-  "devDependencies": {
-    "browserify": "^15.1.0",
-    "onchange": "^3.3.0",
-    "parallelshell": "^3.0.2"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "bundle exec jekyll build && npm run js",
@@ -19,9 +10,26 @@
     "js": "browserify src/assets/main.js -o dist/assets/main.js",
     "watch:js": "parallelshell \"onchange 'src/assets/main.js' -- npm run js\" \"onchange 'dist/index.html' -- npm run js\""
   },
+  "dependencies": {
+    "custom-scroll-animations": "^1.0.1",
+    "gsap": "^1.20.4",
+    "typed.js": "^2.0.6"
+  },
+  "devDependencies": {
+    "browserify": "^15.1.0",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://skiprox@bitbucket.org/skiprox/tech-action-working-group.git"
+  },
+  "browser": {
+    "tween-lite": "./node_modules/gsap/src/uncompressed/TweenLite.js",
+    "timeline-lite": "./node_modules/gsap/src/uncompressed/TimelineLite.js",
+    "ease-pack": "./node_modules/gsap/src/uncompressed/easing/EasePack.js",
+    "css-plugin": "./node_modules/gsap/src/uncompressed/plugins/CssPlugin.js",
+    "scroll-to-plugin": "./node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"
   },
   "author": "skiprox",
   "license": "ISC",
