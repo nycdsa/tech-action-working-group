@@ -4,6 +4,7 @@
   "description": "new york city tech action working group",
   "main": "index.js",
   "dependencies": {
+    "custom-scroll-animations": "^1.0.1",
     "typed.js": "^2.0.6"
   },
   "devDependencies": {
