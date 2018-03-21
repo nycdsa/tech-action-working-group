@@ -19,6 +19,16 @@ body.base {
 			}
 		}
 	}
+	.sound {
+		display: block;
+		background-image: url('/assets/images/sound.png');
+		width: 40px;
+		height: 40px;
+		background-size: 40px auto;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+	}
 	.box {
 		background-color: white;
 		border: 5px solid $black;

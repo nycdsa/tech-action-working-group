@@ -10,10 +10,12 @@
 // All other modules
 const example = require('./_js/example');
 const scrollAnimations = require('./_js/scroll-animations');
+const music = require('./_js/music');
 
 class Main {
 	constructor() {
 		new scrollAnimations();
+		new music();
 		example();
 	}
 }
