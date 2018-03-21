@@ -1,4 +1,4 @@
-.base {
+body.base {
 	background: linear-gradient(to bottom, #EC1F27 0%, #FF007F 42%, #B292FF 100%);
 	.section {
 		margin-bottom: 80px;
@@ -39,19 +39,6 @@
 			line-height: 1.2;
 		}
 	}
-	.scroll-trigger {
-		.box {
-			opacity: 0;
-			transform: scale(0.6, 0.6) translateY(200px);
-			transition: all 1.4s ease;
-		}
-		&.in-viewport {
-			.box {
-				opacity: 1;
-				transform: scale(1, 1) translateY(0);
-			}
-		}
-	}
 	.homepage-header {
 		.hero-wrapper {
 			width: 80%;
@@ -62,12 +49,57 @@
 			margin-top: -100px;
 			z-index: -1;
 		}
-		.hero {
-			width: 100%;
+		.globe-container {
+			position: relative;
+			width: 60%;
+			margin: 100px auto;
 			height: 0;
-			padding-bottom: 68.727%;
-			background-image: url('/assets/images/hero_lg_2x.png');
+			padding-bottom: 60%;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.globe {
+			background-image: url('/assets/images/globe-texture_lg_2x.jpg');
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 			background-size: cover;
+			background-position: center center;
+			transform: scale(1.12, 1.12);
+			animation: move-left-to-right 10s cubic-bezier(0.18, 0.01, 0.82, 0.99) infinite;
+		}
+		.globe-text {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			max-width: 640px;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-transform: uppercase;
+			line-height: 1;
+			.dsa {
+				align-self: flex-end;
+			}
+			.working-group, .tech-action {
+				align-self: flex-start;
+			}
+			.dsa, .working-group {
+				color: black;
+				@include fluid-value(font-size, 32px, 50px);
+				font-weight: 800;
+			}
+			.tech-action {
+				color: white;
+				@include fluid-value(font-size, 68px, 100px);
+				font-weight: 800;
+			}
 		}
 	}
 	.footer-paragraph {
@@ -124,7 +156,7 @@
 		@include fluid-value(font-size, 34px, 110px);
 		font-weight: 900;
 		padding: 45px 80px 145px 80px;
-		transition: background-color 0.6s ease, color 0.6s ease;
+		transition: background-color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94), color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 		transition-delay: 1s;
 		.large {
 			text-transform: uppercase;
@@ -309,11 +341,52 @@
 * ANIMATIONS
 *
 *****************/
+body.base {
+	.scroll-trigger {
+		.box {
+			opacity: 0;
+			transform: scale(0.6, 0.6) translateY(200px);
+			transition: opacity 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+			&.labor {
+				transition-delay: 1200ms;
+			}
+			&.big-tech {
+				transition-delay: 400ms;
+			}
+			&.vaporwave {
+				transition-delay: 800ms;
+			}
+			&.illuminati {
+				transition-delay: 800ms;
+			}
+			&.nyancat {
+				transition-delay: 1200ms;
+			}
+			&.vr {
+				transition-delay: 400ms;
+			}
+		}
+		&.in-viewport {
+			.box {
+				opacity: 1;
+				transform: scale(1, 1) translateY(0);
+			}
+		}
+	}
+}
 @keyframes ticker {
     0% {
         transform: translateX(-100%);
     }
     100% {
         transform: translateX(-200%);
+    }
+}
+@keyframes move-left-to-right {
+    0%, 100% {
+        transform: scale(1.12, 1.12) translateX(-30px);
+    }
+    66% {
+        transform: scale(1.12, 1.12) translateX(30px);
     }
 }
