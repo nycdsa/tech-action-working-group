@@ -13,8 +13,18 @@ body.base {
 		.nav-list {
 			.nav-item {
 				color: $black;
+				@include viewport(sm) {
+					color: white;
+				}
 				&:hover {
 					color: white;
+				}
+			}
+		}
+		.nav-open {
+			i {
+				@include viewport(sm) {
+					background: $black;
 				}
 			}
 		}
@@ -82,7 +92,7 @@ body.base {
 			height: 100%;
 			background-size: cover;
 			background-position: center center;
-			transform: scale(1.12, 1.12);
+			transform: scale(1.4, 1.4);
 			animation: move-left-to-right 10s cubic-bezier(0.18, 0.01, 0.82, 0.99) infinite;
 		}
 		.globe-text {
@@ -132,6 +142,21 @@ body.base {
 		justify-content: space-evenly;
 		align-items: flex-start;
 		margin: 100px auto;
+		@include viewport(md) {
+			margin: 80px auto;
+		}
+		@include viewport(sm) {
+			margin: 60px auto;
+		}
+		&.flex-container-md {
+			@include viewport(md) {
+				max-width: 740px;
+				flex-direction: row;
+			}
+			@include viewport(sm) {
+				flex-direction: column;
+			}
+		}
 		@include viewport(md) {
 			flex-direction: column;
 			align-items: center;
@@ -187,6 +212,13 @@ body.base {
 		}
 	}
 	.labor {
+		@include viewport(md) {
+			margin-top: -100px;
+		}
+		@include viewport(sm) {
+			margin: 0;
+			margin-bottom: 60px;
+		}
 		.figure {
 			background-image: url('/assets/images/pokemon.gif');
 			position: absolute;
@@ -202,13 +234,17 @@ body.base {
 		margin-top: 200px;
 		@include viewport(sm) {
 			margin: 0;
+			margin-bottom: 60px;
 		}
 	}
 	.vaporwave {
 		margin-left: -140px;
 		margin-top: 30px;
+		@include viewport(md) {
+			margin-left: -10px;
+		}
 		@include viewport(sm) {
-			margin-left: 0;
+			margin: 0;
 		}
 		.figure {
 			background-image: url('/assets/images/vaporwave.gif');
@@ -228,6 +264,13 @@ body.base {
 		margin-top: -200px;
 		margin-left: 100px;
 		z-index: -1;
+		@include viewport(md) {
+			margin-left: 0;
+		}
+		@include viewport(sm) {
+			margin: 0;
+			margin-bottom: 60px;
+		}
 		.figure {
 			background-image: url('/assets/images/illuminati.gif');
 			position: absolute;
@@ -243,6 +286,14 @@ body.base {
 	}
 	.nyancat {
 		margin-top: 180px;
+		@include viewport(md) {
+			margin-top: 260px;
+			margin-left: -160px;
+		}
+		@include viewport(sm) {
+			margin: 0;
+			margin-bottom: 60px;
+		}
 		.figure {
 			background-image: url('/assets/images/nyancat.gif');
 			position: absolute;
@@ -259,6 +310,13 @@ body.base {
 	}
 	.vr {
 		margin-left: -180px;
+		@include viewport(md) {
+			margin-top: -140px;
+			margin-left: -90px;
+		}
+		@include viewport(sm) {
+			margin: 0;
+		}
 		.figure {
 			background-image: url('/assets/images/vr.gif');
 			position: absolute;
@@ -284,7 +342,9 @@ body.base {
 			color: $red;
 			line-height: 1;
 			display: inline-block;
-			padding: 40px 0;
+			padding: 0;
+			@include fluid-value(padding-top, 20px, 40px);
+			@include fluid-value(padding-bottom, 20px, 40px);
 			width: 100%;
 			transform: translateX(-100%);
 			animation: ticker 15s linear infinite;
@@ -305,6 +365,13 @@ body.base {
 			position: sticky;
 			top: 60px;
 			float: right;
+			@include viewport(md) {
+				float: none;
+				left: 80%;
+			}
+			@include viewport(sm) {
+				@include image-size(127px, 93px);
+			}
 		}
 	}
 	.posts-container {
@@ -399,9 +466,9 @@ body.base {
 }
 @keyframes move-left-to-right {
     0%, 100% {
-        transform: scale(1.12, 1.12) translateX(-30px);
+        transform: scale(1.4, 1.4) translateX(-30px);
     }
     66% {
-        transform: scale(1.12, 1.12) translateX(30px);
+        transform: scale(1.4, 1.4) translateX(30px);
     }
 }
