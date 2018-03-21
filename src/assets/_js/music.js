@@ -8,7 +8,16 @@ class Music {
 	}
 	onSoundClick(e) {
 		e.preventDefault();
-		this.song.play();
+		// Turn on/off sound
+		if (e.target.classList.contains('off')) {
+			e.target.classList.remove('off');
+			e.target.classList.add('on');
+			this.song.play();
+		} else {
+			e.target.classList.remove('on');
+			e.target.classList.add('off');
+			this.song.pause();
+		}
 	}
 }
 

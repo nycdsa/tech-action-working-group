@@ -11,8 +11,7 @@
     "watch:js": "parallelshell \"onchange 'src/assets/main.js' -- npm run js\" \"onchange 'dist/index.html' -- npm run js\""
   },
   "dependencies": {
-    "custom-scroll-animations": "^1.0.1",
-    "gsap": "^1.20.4"
+    "custom-scroll-animations": "^1.0.1"
   },
   "devDependencies": {
     "browserify": "^15.1.0",
