@@ -19,9 +19,12 @@
 		display: flex;
 		align-items: center;
 		text-transform: uppercase;
-		@include fluid-value(font-size, 16px, 22px);
+		font-size: 18px;
 		.nav-item {
 			margin: 0 15px;
+			&.link-cta {
+				font-size: 18px;
+			}
 		}
 	}
 	@include viewport(sm) {
