@@ -213,7 +213,10 @@ body.base .homepage-content {
 		font-weight: 900;
 		padding: 45px 80px 145px 80px;
 		transition: background-color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94), color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		transition-delay: 1s;
+		transition-delay: 1000ms;
+		@include viewport(sm) {
+			transition-delay: 400ms;
+		}
 		.large {
 			text-transform: uppercase;
 			display: block;
@@ -444,6 +447,10 @@ body.base .homepage-content {
 			font-family: 'ManifoldDSA', sans-serif !important;
 			border: 5px solid $black;
 			background-color: white;
+			input {
+				border: 2px solid $black;
+				border-radius: 0;
+			}
 			.button {
 				padding: 10px 16px;
 				border-radius: 30px;
@@ -454,6 +461,7 @@ body.base .homepage-content {
 				background-color: $red;
 				font-weight: 800;
 				height: auto;
+				border: none;
 				&:hover {
 					background-color: $black;
 					color: white;
@@ -523,21 +531,39 @@ body.base {
 			transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 			&.labor {
 				transition-delay: 1000ms;
+				@include viewport(sm) {
+					transition-delay: 100ms;
+				}
 			}
 			&.big-tech {
 				transition-delay: 200ms;
+				@include viewport(sm) {
+					transition-delay: 100ms;
+				}
 			}
 			&.vaporwave {
 				transition-delay: 600ms;
+				@include viewport(sm) {
+					transition-delay: 100ms;
+				}
 			}
 			&.illuminati {
 				transition-delay: 600ms;
+				@include viewport(sm) {
+					transition-delay: 100ms;
+				}
 			}
 			&.nyancat {
 				transition-delay: 1000ms;
+				@include viewport(sm) {
+					transition-delay: 100ms;
+				}
 			}
 			&.vr {
 				transition-delay: 200ms;
+				@include viewport(sm) {
+					transition-delay: 100ms;
+				}
 			}
 		}
 		#mc_embed_signup {
