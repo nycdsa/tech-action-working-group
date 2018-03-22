@@ -255,13 +255,14 @@ body.base .homepage-content {
 			margin: 0;
 		}
 		.figure {
-			background-image: url('/assets/images/vaporwave.gif');
+			background-image: url('/assets/images/vaporwave-2.gif');
 			position: absolute;
 			width: 100%;
 			height: 100%;
 			top: 0;
 			left: 0;
-			background-size: 100% auto;
+			background-size: cover;
+			background-position: top center;
 			background-repeat: no-repeat;
 		}
 		.box-text {
@@ -294,6 +295,8 @@ body.base .homepage-content {
 	}
 	.nyancat {
 		margin-top: 180px;
+		overflow: hidden;
+		background-color: black;
 		@include viewport(md) {
 			margin-top: 260px;
 			margin-left: -160px;
@@ -303,13 +306,14 @@ body.base .homepage-content {
 			margin-bottom: 60px;
 		}
 		.figure {
-			background-image: url('/assets/images/nyancat.gif');
+			background-image: url('/assets/images/nyan-2.gif');
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			top: 0;
+			top: -120px;
 			left: 0;
-			background-size: cover
+			background-size: 100% auto;
+			background-position: top center;
 		}
 		.box-text {
 			color: white;
