@@ -342,6 +342,12 @@ body.base .homepage-content {
 		position: relative;
 		white-space: nowrap;
 		overflow: hidden;
+		@include viewport(md) {
+			margin-bottom: 250px;
+		}
+		@include viewport(sm) {
+			margin-bottom: 100px;
+		}
 		.ticker-text {
 			font-family: monospace;
 			font-weight: 800;
@@ -360,12 +366,24 @@ body.base .homepage-content {
 	}
 	.callout-section {
 		margin-bottom: 600px;
+		@include viewport(md) {
+			margin-bottom: 350px;
+		}
+		@include viewport(sm) {
+			margin-bottom: 150px;
+		}
 		.callout-text {
 			color: $yellow;
 			@include fluid-value(font-size, 30px, 90px);
 			font-weight: 600;
 			line-height: 1;
-			padding-bottom: 2em;
+			margin-bottom: 2em;
+			@include viewport(md) {
+				margin-bottom: 1.5em;
+			}
+			@include viewport(sm) {
+				margin-bottom: 1em;
+			}
 		}
 		.callout-rose {
 			background-image: url('/assets/images/rose-hi-def_lg_2x.png');
@@ -392,10 +410,10 @@ body.base .homepage-content {
 		@include viewport(md) {
 			position: relative;
 			width: 100%;
-			margin-bottom: 60px;
+			margin-bottom: 100px;
 		}
 		@include viewport(sm) {
-			margin-bottom: 40px;
+			margin-bottom: 80px;
 		}
 		.post-title {
 			margin-top: 0;
