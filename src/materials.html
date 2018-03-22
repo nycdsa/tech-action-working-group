@@ -1,11 +1,11 @@
 ---
 layout: posts
-permalink: /curricula/
+permalink: /materials/
 ---
 
 <div class='posts-container'>
 	{% for page in site.posts limit:5 %}
-		{% if page.categories contains 'curricula' %}
+		{% if page.categories contains 'materials' %}
 			<div class="post" id="post-{{ page.id }}">
 				{% include post-header.html %}
 				<article class="post-body">
@@ -18,7 +18,7 @@ permalink: /curricula/
 		{% endif %}
 	{% endfor %}
 	<div class="more-link">
-		<a href="/archive/curricula" class="post-link link-cta">All Curricula</a>
+		<a href="/archive/materials" class="post-link link-cta">All Materials</a>
 	</div>
 </div>
 

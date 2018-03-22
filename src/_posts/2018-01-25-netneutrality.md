@@ -1,7 +1,7 @@
 ---
 issue: 1
 title: FROM NET NEUTRALITY TO PUBLIC INTERNET
-category: curricula
+category: materials
 ---
 Please join us on Thursday, January 25, for our first general meeting of 2018, **From Net Neutrality to Public Internet**. We'll be taking a look at the excitement around net neutrality and how we can shift that energy to thinking about *who owns the infrastructure of the internet*. We’ve got two great speakers lined up:
 

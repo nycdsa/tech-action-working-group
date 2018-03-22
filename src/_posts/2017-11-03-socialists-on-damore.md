@@ -1,7 +1,7 @@
 ---
 issue: 1
 title: SOCIALISTS ON DAMORE
-category: curricula
+category: materials
 ---
 Reminder that our next meeting, **Socialists on Damore: Discrimination, Labor Rights and Bullshit Biology**, will be held Monday, November 13th from 7-8:45pm. We will meet in the usual location, 114 W. 26th, 9th floor, followed by some drinks at Black Door across the street.
 

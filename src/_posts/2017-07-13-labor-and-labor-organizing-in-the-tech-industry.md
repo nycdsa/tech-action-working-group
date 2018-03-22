@@ -1,7 +1,7 @@
 ---
 issue: 1
 title: LABOR AND LABOR ORGANIZING IN THE TECH INDUSTRY
-category: curricula
+category: materials
 ---
 Hello comrades,
 

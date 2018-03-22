@@ -1,7 +1,7 @@
 ---
 issue: 1
 title: WORKER DEMANDS IN THE TECH INDUSTRY
-category: curricula
+category: materials
 ---
 Hello comrades of the computer,
 

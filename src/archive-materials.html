@@ -1,11 +1,11 @@
 ---
 layout: post-base
-permalink: /archive/curricula/
+permalink: /archive/materials/
 ---
 
 <div class='posts-container'>
 	{% for page in site.posts %}
-		{% if page.categories contains 'curricula' %}
+		{% if page.categories contains 'materials' %}
 			<div class="post" id="post-{{ page.id }}">
 				{% include post-header.html %}
 				<article class="post-body">
