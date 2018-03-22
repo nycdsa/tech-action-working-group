@@ -1,5 +1,7 @@
 body.base {
 	background: linear-gradient(to bottom, #EC1F27 0%, #FF007F 42%, #B292FF 100%);
+	width: 100%;
+	overflow-x: hidden;
 	.section {
 		margin-bottom: 80px;
 		@include viewport(md) {
@@ -490,6 +492,7 @@ body.base .homepage-content {
 		border-top-right-radius: 5px;
 		background-color: white;
 		margin-top: 210px;
+		overflow-x: hidden;
 		&:before {
 			content: '';
 			position: absolute;
