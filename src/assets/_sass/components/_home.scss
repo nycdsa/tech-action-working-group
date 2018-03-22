@@ -419,7 +419,7 @@ body.base .homepage-content {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-image: url('/assets/images/running.gif');
+			background-image: url('/assets/images/rose-opening.gif');
 			background-size: cover;
 			background-position: center center;
 			opacity: 0.4;
@@ -442,6 +442,21 @@ body.base .homepage-content {
 			font-family: 'ManifoldDSA', sans-serif !important;
 			border: 5px solid $black;
 			background-color: white;
+			.button {
+				padding: 10px 16px;
+				border-radius: 30px;
+				font-size: 18px;
+				line-height: 1;
+				text-transform: uppercase;
+				font-family: 'ManifoldDSA', sans-serif !important;
+				background-color: $red;
+				font-weight: 800;
+				height: auto;
+				&:hover {
+					background-color: $black;
+					color: white;
+				}
+			}
 		}
 	}
 	.posts-container {
