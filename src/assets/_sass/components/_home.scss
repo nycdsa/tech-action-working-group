@@ -365,7 +365,7 @@ body.base .homepage-content {
 		}
 	}
 	.callout-section {
-		margin-bottom: 600px;
+		margin-bottom: 400px;
 		@include viewport(md) {
 			margin-bottom: 160px;
 		}
@@ -401,7 +401,16 @@ body.base .homepage-content {
 		}
 	}
 	.mailchimp-container {
+		position: relative;
 		margin-bottom: 400px;
+		.signup-gif {
+			// position: absolute;
+			// top: -200px;
+			// right: -100px;
+			background-image: url('/assets/images/running.gif');
+			@include image-size(500px, 312px);
+			z-index: 1;
+		}
 		@include viewport(md) {
 			margin-bottom: 120px;
 		}
@@ -411,6 +420,9 @@ body.base .homepage-content {
 		#mc_embed_signup {
 			font-family: 'ManifoldDSA', sans-serif !important;
 			border: 5px solid $black;
+			background-image: url('/assets/images/rose-light.gif');
+			background-size: cover;
+			background-position: center center;
 		}
 	}
 	.posts-container {
@@ -491,10 +503,19 @@ body.base {
 				transition-delay: 200ms;
 			}
 		}
+		#mc_embed_signup {
+			opacity: 0;
+			transform: scale(0.6, 0.6) rotate(47deg);
+			transition: transform 1200ms cubic-bezier(.17,.67,.24,1.51), opacity 800ms ease;
+		}
 		&.in-viewport {
 			.box {
 				opacity: 1;
 				transform: scale(1, 1) translateY(0);
+			}
+			#mc_embed_signup {
+				opacity: 1;
+				transform: scale(1, 1) rotate(0deg);
 			}
 		}
 	}
