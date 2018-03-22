@@ -343,10 +343,10 @@ body.base .homepage-content {
 		white-space: nowrap;
 		overflow: hidden;
 		@include viewport(md) {
-			margin-bottom: 250px;
+			margin-bottom: 120px;
 		}
 		@include viewport(sm) {
-			margin-bottom: 100px;
+			margin-bottom: 60px;
 		}
 		.ticker-text {
 			font-family: monospace;
@@ -367,10 +367,10 @@ body.base .homepage-content {
 	.callout-section {
 		margin-bottom: 600px;
 		@include viewport(md) {
-			margin-bottom: 350px;
+			margin-bottom: 160px;
 		}
 		@include viewport(sm) {
-			margin-bottom: 150px;
+			margin-bottom: 80px;
 		}
 		.callout-text {
 			color: $yellow;
@@ -398,6 +398,19 @@ body.base .homepage-content {
 			@include viewport(sm) {
 				@include image-size(127px, 93px);
 			}
+		}
+	}
+	.mailchimp-container {
+		margin-bottom: 400px;
+		@include viewport(md) {
+			margin-bottom: 120px;
+		}
+		@include viewport(sm) {
+			margin-bottom: 60px;
+		}
+		#mc_embed_signup {
+			font-family: 'ManifoldDSA', sans-serif !important;
+			border: 5px solid $black;
 		}
 	}
 	.posts-container {

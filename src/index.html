@@ -71,6 +71,9 @@ layout: base
 		<h3 class="callout-text">creating alternatives to the status quo,</h3>
 		<h3 class="callout-text">and thinking up strategies to challenge the tech industry's growing power.</h3>
 	</div>
+	<div class="container thin mailchimp-container">
+		{% include mailchimp.html %}
+	</div>
 	<div class="container flex-container">
 		<div class="posts-container box">
 			{% for page in site.posts limit:1 %}
