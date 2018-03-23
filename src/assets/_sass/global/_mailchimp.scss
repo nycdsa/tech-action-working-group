@@ -1,0 +1,114 @@
+.mailchimp-container {
+	position: relative;
+	margin-bottom: 400px;
+	&.isolated {
+		margin-bottom: 100px;
+		@include viewport(md) {
+			margin-bottom: 80px;
+		}
+		@include viewport(sm) {
+			margin-bottom: 40px;
+		}
+	}
+	@include viewport(sm) {
+		overflow: hidden;
+	}
+	.mailchimp-form-figure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/assets/images/rose-opening.gif');
+		background-size: cover;
+		background-position: center center;
+		opacity: 0.4;
+	}
+	.signup-gif {
+		// position: absolute;
+		// top: -200px;
+		// right: -100px;
+		background-image: url('/assets/images/running.gif');
+		@include image-size(500px, 312px);
+		z-index: 1;
+	}
+	@include viewport(md) {
+		margin-bottom: 120px;
+	}
+	@include viewport(sm) {
+		margin-bottom: 60px;
+	}
+	#mc_embed_signup {
+		font-family: 'ManifoldDSA', sans-serif !important;
+		border: 5px solid $black;
+		background-color: white;
+		@include fluid-value(font-size, 18px, 24px);
+		form {
+			padding: 40px;
+			@include viewport(md) {
+				padding: 30px;
+			}
+			@include viewport(sm) {
+				padding: 20px;
+			}
+		}
+		.button {
+			font-family: $font-sans;
+			@include fluid-value(font-size, 18px, 24px);
+		    font-weight: 600;
+		    color: white;
+		    text-decoration: none;
+		    background-color: $red;
+		    border-radius: 30px;
+		    text-transform: uppercase;
+		    padding: 8px 16px;
+			height: auto;
+			border: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			&:hover {
+				background-color: $black;
+				color: white;
+			}
+		}
+		.mc-field-group {
+			input {
+				border: 2px solid $black;
+				border-radius: 0;
+				@include fluid-value(font-size, 18px, 24px);
+				font-family: 'ManifoldDSA', sans-serif !important;
+				font-weight: 400;
+				padding: 8px 0;
+			}
+			select {
+				@include fluid-value(font-size, 18px, 24px);
+				border: 2px solid $black;
+				background-color: white;
+				color: $black;
+				font-family: 'ManifoldDSA', sans-serif !important;
+				border-radius: 0px;
+				padding: 8px;
+				width: 100%;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+				-webkit-appearance: none;
+				background-position-x: 98%;
+			}
+			input[type='checkbox'] {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin: 0 10px 0 0;
+				background-color: white;
+				border-radius: 0px;
+				border: 2px solid $black;
+				&:checked {
+					background-color: $black;
+				}
+			}
+		}
+	}
+}
