@@ -469,16 +469,29 @@ body.base .homepage-content {
 			input {
 				border: 2px solid $black;
 				border-radius: 0;
+				@include fluid-value(font-size, 18px, 24px);
+				font-family: 'ManifoldDSA', sans-serif !important;
+				font-weight: 400;
+				padding: 8px 0;
 			}
 			select {
 				@include fluid-value(font-size, 18px, 24px);
 				border: 2px solid $black;
 				background-color: white;
 				color: $black;
-				-webkit-border-radius: 0px;
+				font-family: 'ManifoldDSA', sans-serif !important;
+				border-radius: 0px;
+				padding: 8px;
+				width: 100%;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+				-webkit-appearance: none;
+				background-position-x: 98%;
 			}
 			input[type='checkbox'] {
 				-webkit-appearance: none;
+				-moz-appearance: none;
 				display: inline-block;
 				width: 20px;
 				height: 20px;
@@ -502,6 +515,7 @@ body.base .homepage-content {
 				height: auto;
 				border: none;
 				-webkit-appearance: none;
+				-moz-appearance: none;
 				&:hover {
 					background-color: $black;
 					color: white;
