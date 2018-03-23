@@ -506,14 +506,15 @@ body.base .homepage-content {
 				}
 			}
 			.button {
-				padding: 10px 16px;
-				border-radius: 30px;
-				font-size: 18px;
-				line-height: 1;
-				text-transform: uppercase;
-				font-family: 'ManifoldDSA', sans-serif !important;
-				background-color: $red;
-				font-weight: 800;
+				font-family: $font-sans;
+				@include fluid-value(font-size, 18px, 24px);
+			    font-weight: 600;
+			    color: white;
+			    text-decoration: none;
+			    background-color: $red;
+			    border-radius: 30px;
+			    text-transform: uppercase;
+			    padding: 8px 16px;
 				height: auto;
 				border: none;
 				-webkit-appearance: none;
