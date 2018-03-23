@@ -28,6 +28,9 @@ body.base {
 						background-color: white;
 						color: $black;
 					}
+					@include viewport(sm) {
+						background-color: $red;
+					}
 				}
 			}
 		}
@@ -47,6 +50,7 @@ body.base {
 		position: fixed;
 		top: 20px;
 		right: 20px;
+		z-index: 1;
 		&.off {
 			background-image: url('/assets/images/sound-off_lg_2x.png');
 		}
@@ -420,6 +424,9 @@ body.base .homepage-content {
 	.mailchimp-container {
 		position: relative;
 		margin-bottom: 400px;
+		@include viewport(sm) {
+			overflow: hidden;
+		}
 		.mailchimp-form-figure {
 			position: absolute;
 			top: 0;
@@ -474,6 +481,7 @@ body.base .homepage-content {
 				font-weight: 800;
 				height: auto;
 				border: none;
+				-webkit-appearance: none;
 				&:hover {
 					background-color: $black;
 					color: white;
