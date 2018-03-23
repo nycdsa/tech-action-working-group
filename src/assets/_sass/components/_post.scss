@@ -56,6 +56,12 @@
 		display: block;
 	}
 }
+.post-subtitle {
+	font-weight: 900;
+	@include fluid-value(font-size, 18px, 28px);
+	line-height: 1.4;
+	text-transform: uppercase;
+}
 .post-tags {
 	.post-tag {
 		display: inline-block;
@@ -67,15 +73,17 @@
 .post-body {
 	@include fluid-value(font-size, 18px, 24px);
 	font-weight: 200;
-	li + li {
+	* + p,
+	* + ul,
+	* + ol,
+	* + li,
+	* + blockquote,
+	* + h1,
+	* + h2,
+	* + h3,
+	* + h4,
+	* + h5 {
 		margin-top: 1em;
-	}
-	p + p {
-		margin-top: 1em;
-	}
-	p + blockquote,
-	blockquote + p {
-		margin-top: 2em;
 	}
 	p strong span {
 		font-size: 1.2em;
