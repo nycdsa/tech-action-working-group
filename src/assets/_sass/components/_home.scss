@@ -411,7 +411,7 @@ body.base .homepage-content {
 			position: -webkit-sticky;
 			position: sticky;
 			top: 60px;
-			float: right;
+			left: 80%;
 			@include viewport(md) {
 				float: none;
 				left: 80%;
