@@ -98,6 +98,7 @@ body.base {
 			padding-bottom: 60%;
 			border-radius: 50%;
 			overflow: hidden;
+			transform: perspective(0);
 		}
 		.globe {
 			background-image: url('/assets/images/globe-texture_lg_2x.jpg');
@@ -403,6 +404,7 @@ body.base .homepage-content {
 		.callout-rose {
 			background-image: url('/assets/images/rose-hi-def_lg_2x.png');
 			@include image-size(254px, 186px);
+			position: -webkit-sticky;
 			position: sticky;
 			top: 60px;
 			float: right;
@@ -447,6 +449,16 @@ body.base .homepage-content {
 			font-family: 'ManifoldDSA', sans-serif !important;
 			border: 5px solid $black;
 			background-color: white;
+			@include fluid-value(font-size, 18px, 24px);
+			form {
+				padding: 40px;
+				@include viewport(md) {
+					padding: 30px;
+				}
+				@include viewport(sm) {
+					padding: 20px;
+				}
+			}
 			input {
 				border: 2px solid $black;
 				border-radius: 0;
