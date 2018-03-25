@@ -1,5 +1,28 @@
 .subscribe-box {
-    border: #EC1F29 3px solid;
-    padding: 10px 30px 30px;
-    margin-top: 50px;
+    border: 5px $black solid;
+    padding: 40px;
+    margin-top: 100px;
+    position: relative;
+    font-family: 'ManifoldDSA', sans-serif !important;
+    @include fluid-value(font-size, 18px, 24px);
+    .subscribe-figure {
+    	position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/assets/images/running.gif');
+		background-size: cover;
+		background-position: center center;
+		opacity: 0.4;
+		z-index: -1;
+    }
+   	.subscribe-header {
+   		font-size: 1.4em;
+   		font-weight: bold;
+   		margin-bottom: 1em;
+   	}
+   	.subscribe-body {
+   		margin-bottom: 1em;
+   	}
 }
