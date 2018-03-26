@@ -2,6 +2,10 @@ body.base {
 	background: linear-gradient(to bottom, #EC1F27 0%, #FF007F 42%, #B292FF 100%);
 	width: 100%;
 	overflow-x: hidden;
+	cursor: url('/assets/images/cursor.png'), default !important;
+	label:hover, select:hover, input:hover, a:hover {
+		cursor: url('/assets/images/cursor.png'), default !important;
+	}
 	.section {
 		margin-bottom: 80px;
 		@include viewport(md) {
