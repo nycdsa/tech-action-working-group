@@ -4,29 +4,37 @@
         text-align: center;
         margin-bottom: 2em;
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .social-links-item {
         display: inline-block;
         vertical-align: middle;
-        padding: 0 12px;
+        padding: 0 40px;
+        @include viewport(md) {
+            padding: 0 20px;
+        }
+        @include viewport(sm) {
+            padding: 0 14px;
+        }
     }
     .social-link {
         display: block;
-        &.thorn-email {
-            background-image: url('/assets/images/social-email_lg_2x.png');
-            @include image-size(50px, 50px);
+        &:hover {
+            svg {
+                transform: rotate(14deg) scale(1.1, 1.1);
+            }
         }
-        &.twitter {
-            background-image: url('/assets/images/social-twitter_lg_2x.png');
-            @include image-size(50px, 50px);
-        }
-        &.facebook {
-            background-image: url('/assets/images/social-facebook_lg_2x.png');
-            @include image-size(50px, 50px);
-        }
-        &.instagram {
-            background-image: url('/assets/images/social-instagram_lg_2x.png');
-            @include image-size(50px, 50px);
+        svg {
+            width: 76px;
+            transition: all 400ms ease;
+            @include viewport(md) {
+                width: 56px;
+            }
+            @include viewport(sm) {
+                width: 40px;
+            }
         }
     }
 }
