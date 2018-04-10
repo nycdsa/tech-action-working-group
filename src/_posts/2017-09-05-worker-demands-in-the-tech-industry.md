@@ -29,13 +29,12 @@ To prepare for the meeting, please look over the following four readings, all of
 
 When you're reading over those, think about the following questions re the workers' demands described in the articles:
 
-> * Are the demands universally applicable to the workers in a particular tech workplace? How might demands be made in solidarity with contractors?
+    * Are the demands universally applicable to the workers in a particular tech workplace? How might demands be made in solidarity with contractors?
 
-> * Do the demands appeal to (material) self-interest or to compassion? In cases of fighting for a minority group (e.g. women in tech), how can that gap be bridged?
+    * Do the demands appeal to (material) self-interest or to compassion? In cases of fighting for a minority group (e.g. women in tech), how can that gap be bridged?
 
-> * Do the demands address only the workers themselves, or do they have a political reach beyond the workplace?
+    * Do the demands address only the workers themselves, or do they have a political reach beyond the workplace?
 
 And most importantly, **think about your own demands!** 🤔 As an exercise we'll see what our own members want changed in their tech (or tech-esque) workplaces. You might find some *sweet relief* when you hear what your comrades say.
-
 
 All of the above, along with some additional, related reading for the extra curious, can be found in [this shareable doc](https://docs.google.com/document/d/1_Oup_dl5BnGmY0zIUiN91vS6-IPLjlQJYc1a-kbrQwY/edit?usp=drivesdk).
