@@ -4,7 +4,7 @@ permalink: /materials/
 ---
 
 <div class='posts-container'>
-	{% for page in site.posts limit:5 %}
+	{% for page in site.posts %}
 		{% if page.categories contains 'materials' %}
 			<div class="post" id="post-{{ page.id }}">
 				{% include post-header.html %}
