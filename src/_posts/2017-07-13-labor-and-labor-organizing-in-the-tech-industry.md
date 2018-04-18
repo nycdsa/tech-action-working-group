@@ -5,16 +5,15 @@ category: materials
 ---
 Hello comrades,
 
-Long time no speak!** It's been over a month since the last meeting of
+Long time no speak!* It's been over a month since the last meeting of
 the NYC-DSA Tech Action working group. In that time we've seen our mailing list grow
 to nearly 100 people. Whew!
 
-Also encouraging is that more than half of you responded to the survey of political topics to cover. That
-gives us a pretty solid idea of what topics we should explore as a group.
+Also encouraging is that more than half of you responded to the survey of political topics to cover. That gives us a pretty solid idea of what topics we should explore as a group.
 And what's the lead topic that y'all want the group to explore? What's our
 group's next focus?
 
-#### Organizing workers in the tech industry
+**Organizing workers in the tech industry**
 
 White collar, blue collar, the whole shebang.
 
@@ -41,5 +40,5 @@ subject. Get that *red blood* pumping.
 We'll send out a reminder next week, along with a few discussion prompts to
 think about. Hope to see y'all next Thursday!
 
-> **We on the organizing committee apologize for our delay in announcing the
+> *We on the organizing committee apologize for our delay in announcing the
 upcoming meeting. We blame it on [Fourth of July](http://i.imgur.com/FRXdiUn.png).

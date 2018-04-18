@@ -17,7 +17,7 @@ To prepare for the meeting and give us some context for our discussion, the Tech
 
 3. *[Koch Brothers Are Cities' New Obstacle to Building Broadband](https://www.wired.com/story/koch-brothers-are-cities-new-obstacle-to-building-broadband/)*, Wired. Get a taste for how capital organizes to politically oppose the kind of public internet we want.
 
-> And a few additional readings for the particularly curious:
+*And a few additional readings for the particularly curious:*
 
 * Re: Privatization of the Internet, there’s no good source in the left political media! Instead, check out this [law journal article from the early 00s](https://drive.google.com/open?id=1y9ejTMwAszYN5fGHbQhgi0_8zMymvLeK), but only Sections IV and V, which are pretty self-contained and fairly readable.
 

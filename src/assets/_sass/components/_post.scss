@@ -90,9 +90,26 @@
 	}
 	blockquote {
 		line-height: 1.6;
-		padding-left: 2em;
+		padding-left: 1em;
+		margin-left: 1em;
 		border-left: 1px solid $red;
 		@include fluid-value(font-size, 24px, 30px);
+	}
+	strong {
+		font-weight: bold;
+	}
+	em {
+		font-style: italic;
+	}
+	hr {
+		margin: 2em 4em;
+	}
+	ul, ol {
+		list-style: initial;
+		padding-left: 2em;
+	}
+	ol {
+		list-style-type: decimal;
 	}
 	.post-list {
 		list-style: disc;
