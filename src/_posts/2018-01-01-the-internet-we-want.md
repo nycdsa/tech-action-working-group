@@ -5,7 +5,7 @@ category: blog
 ---
 Our first Tech Action event was a success! On December 17, 2017 we co-hosted a panel with Logic Magazine called “The Internet We Want”.
 
-![My helpful screenshot]({{ "/assets/images/internet-we-want-poster.jpg" | absolute_url }})
+[![The Internet We Want]({{ "/assets/images/internet-we-want-poster.jpg" | absolute_url }})](https://www.youtube.com/watch?v=PtO4rPPBWjY "The Internet We Want")
 
 The focus of discussion was on the pitfalls of Big Tech and how the Left can seize new opportunities in the wake of its failures to advance a more radical vision for digital democracy. The panel happened to fall on the same week as the FCC's repeal of Net Neutrality so people were eager to get together and discuss a new radical vision for The Internet.
 
