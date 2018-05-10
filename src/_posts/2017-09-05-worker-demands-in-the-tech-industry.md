@@ -4,10 +4,10 @@ title: WORKER DEMANDS IN THE TECH INDUSTRY
 category: materials
 ---
 
-# Description
+## Description
 In this meeting we discussed how organized workers make demands, and what those demands might look like in the tech industry.
 
-# Readings
+## Readings
 
 1. [As temp sector grew, so did appeal of union: Microsoft campus labmates bargain for benefits](https://www.bostonglobe.com/business/2015/01/13/union-for-temporary-workers-speaks-demands-growing-sector/iXlaeB763s0E1gwLZimZ1M/story.html). On the organizing efforts by Microsoft contractors that do bug testing.
 
@@ -26,7 +26,7 @@ In this meeting we discussed how organized workers make demands, and what those 
     
     4. [To Understand Rising Inequality, Consider the Janitors at Two Top Companies, Then and Now](https://www.nytimes.com/2017/09/03/upshot/to-understand-rising-inequality-consider-the-janitors-at-two-top-companies-then-and-now.html). An interesting piece examining the role of blue-collar workers in the tech industry, and specifically how contract work allow for big companies to sidestep regulation and inflate their value.
 
-# Discussion Questions
+## Discussion Questions
 
 1. How do the Microsoft workers' status as contractors affect their demands and their organizing?
 
