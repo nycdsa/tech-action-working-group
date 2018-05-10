@@ -3,14 +3,13 @@ issue: 1
 title: SOCIALISTS ON DAMORE
 category: materials
 ---
-Reminder that our next meeting, **Socialists on Damore: Discrimination, Labor Rights and Bullshit Biology**, will be held Monday, November 13th from 7-8:45pm. We will meet in the usual location, 114 W. 26th, 9th floor, followed by some drinks at Black Door across the street.
+**Socialists on Damore: Discrimination, Labor Rights, and Bullshit Biology**
 
 
-The meeting will revolve around a group discussion about the many issues surrounding the case of James Damore, the Google engineer who was fired after internally publishing an anti-diversity memo. **We're not discussing the memo or Damore himself**, per se -- that's been covered everywhere already -- **but the political questions surrounding them.**
+This meeting was cengtered on a group discussion about the many issues surrounding the case of James Damore, the Google engineer who was fired after internally publishing an anti-diversity memo. 
+**We're did not discuss the ideas put forth in the memo or Damore himself**, per se -- that's been covered elsewhere -- **but rather the political questions surrounding them.** We asked a few participants with first-person experience facing workplace descrimination to speak first before opening the discussion to the group.
 
-In this meeting we’ll have a few participants speaking first before opening the discussion to the whole group. As in previous meetings, we have also prepared some discussion questions, but for time reasons we won't try to cover all of them.
-
-As background to the discussion, we recommend the following short readings:
+Readings:
 
 1. [Why Can’t Silicon Valley Solve Its Diversity Problem?](https://www.newyorker.com/business/currency/why-cant-silicon-valley-solve-its-diversity-problem), The New Yorker.
 The tech industry has pervasive issues with hiring—and retaining—women, black, and Latino employees. Now a bevy of startups hopes to expand the recruiting process.
@@ -22,7 +21,7 @@ How big business came to love sounding progressive while protecting status and p
 
 -------------
 
-Here are the Discussion questions for the meeting:
+Discussion Questions: 
 
 **Discrimination**
 
@@ -41,7 +40,7 @@ Here are the Discussion questions for the meeting:
 
 2. How or why is this concept particularly pervasive in the tech industry, in comparison to other industries?
 
-3. What’s the significance of the fat that diversity efforts in the tech industry only speak to professional and managerial workers?
+3. What’s the significance of the fact that diversity efforts in the tech industry often speak only to professional and managerial workers?
 
 4. Workers must often adhere to a nebulous “corporate culture.” Who creates this culture? Who enforces it? How much influence do workers have?
 
@@ -61,4 +60,4 @@ Here are the Discussion questions for the meeting:
 
 1. Damore’s pseudoscientific claims about biology, a kind of biological determinism, were used to justify discrimination against women in tech. What are other examples of such biological determinism being invoked by the Right?
 
-2. What are the limitations of opposing the Right’s biological determinism by meticulously debunking their claims? What do we do if, in certain cases, the science is actually on their side?
+2. What are the limitations of opposing the Right’s biological determinism by meticulously debunking their claims? 
