@@ -3,24 +3,23 @@ issue: 1
 title: SOCIALISTS ON DAMORE
 category: materials
 ---
+# Description
 This meeting was centered on a group discussion about the many issues surrounding the case of James Damore, the Google engineer who was fired after internally publishing an anti-diversity memo. 
 **We did not discuss the ideas put forth in the memo or Damore himself**, per se -- that's been covered elsewhere -- **but rather the political questions surrounding them.** We asked a few participants with first-person experience facing workplace descrimination to speak first before opening the discussion to the group.
 
--------------
+# Readings
 
-Readings:
-
-1. [Why Can’t Silicon Valley Solve Its Diversity Problem?](https://www.newyorker.com/business/currency/why-cant-silicon-valley-solve-its-diversity-problem), The New Yorker.
+1. [Why Can’t Silicon Valley Solve Its Diversity Problem?](https://www.newyorker.com/business/currency/why-cant-silicon-valley-solve-its-diversity-problem)
 The tech industry has pervasive issues with hiring—and retaining—women, black, and Latino employees. Now a bevy of startups hopes to expand the recruiting process.
 
-2. [Silicon Intersectionality](https://www.currentaffairs.org/2017/10/silicon-intersectionality), Current Affairs.
+2. [Silicon Intersectionality](https://www.currentaffairs.org/2017/10/silicon-intersectionality).
 How big business came to love sounding progressive while protecting status and privilege.
 
-3. [Corporations are cracking down on free speech inside the office — and out](https://www.washingtonpost.com/outlook/corporations-are-cracking-down-on-free-speech-inside-the-office--and-out/2017/08/10/6a98809a-7baf-11e7-a669-b400c5c7e1cc_story.html?utm_term=.cf2aa681399c). The Washington Post. With the firing of James Damore, Google reignited longstanding debates about speech and work.
+3. [Corporations are cracking down on free speech inside the office — and out](https://www.washingtonpost.com/outlook/corporations-are-cracking-down-on-free-speech-inside-the-office--and-out/2017/08/10/6a98809a-7baf-11e7-a669-b400c5c7e1cc_story.html?utm_term=.cf2aa681399c). With the firing of James Damore, Google reignited longstanding debates about speech and work.
 
 -------------
 
-Discussion Questions: 
+# Discussion Questions
 
 **Discrimination**
 
