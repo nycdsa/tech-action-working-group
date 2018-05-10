@@ -6,8 +6,8 @@ category: materials
 **Socialists on Damore: Discrimination, Labor Rights, and Bullshit Biology**
 
 
-This meeting was cengtered on a group discussion about the many issues surrounding the case of James Damore, the Google engineer who was fired after internally publishing an anti-diversity memo. 
-**We're did not discuss the ideas put forth in the memo or Damore himself**, per se -- that's been covered elsewhere -- **but rather the political questions surrounding them.** We asked a few participants with first-person experience facing workplace descrimination to speak first before opening the discussion to the group.
+This meeting was centered on a group discussion about the many issues surrounding the case of James Damore, the Google engineer who was fired after internally publishing an anti-diversity memo. 
+**We did not discuss the ideas put forth in the memo or Damore himself**, per se -- that's been covered elsewhere -- **but rather the political questions surrounding them.** We asked a few participants with first-person experience facing workplace descrimination to speak first before opening the discussion to the group.
 
 Readings:
 
