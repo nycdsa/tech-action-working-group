@@ -3,18 +3,18 @@ issue: 1
 title: LABOR AND LABOR ORGANIZING IN THE TECH INDUSTRY
 category: materials
 ---
-# Description
+## Description
 In July of 2017 we held a meeting to begin thinking about what constitutes 
 labor in the tech industry, who "tech workers" are, and how we might think 
 about organizing these workers.  
 
-# Readings
+## Readings
 
 1. [Trump's Tech Opposition](https://jacobinmag.com/2017/05/tech-workers-silicon-valley-trump-resistance-startups-unions). Tech employees who increasingly see themselves as workers will be an important sector of resistance to Trump's agenda.
 
 2. [Programmers in India Have Created the Country's First Tech-Sector Union](https://www.thenation.com/article/indian-programmers-have-created-the-countrys-first-tech-sector-union). Responding to an Indian tech economy in flux, workers are demanding representation.
 
-# Discussion Questions
+## Discussion Questions
 
 1. What kind of work is done in the tech industry?
 
