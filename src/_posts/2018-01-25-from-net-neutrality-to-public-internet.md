@@ -16,7 +16,7 @@ In January 2018 "Net Neutrality" was on everyone's minds. Our goal for this meet
 
 4. Bonus readings:
     * [Fool Us Once Shame On You – Fool Us Twice Shame On Us](https://drive.google.com/open?id=1y9ejTMwAszYN5fGHbQhgi0_8zMymvLeK). Re: Privatization of the Internet, there’s few good sources in the left political media! Instead, check out this law journal article from the early 00s, but only Sections IV and V, which are pretty self-contained and fairly readable.
-    * [The New Sewer Socialists Are Building an Equitable Internet](https://www.thenation.com/article/the-new-sewer-socialists-are-building-an-equitable-internet/). Re: Municipal broadband, see Evan’s [other recent article](https://www.thenation.com/article/the-new-sewer-socialists-are-building-an-equitable-internet/) on the successful municipal broadband in Chattanooga, Tennessee.
+    * [The New Sewer Socialists Are Building an Equitable Internet](https://www.thenation.com/article/the-new-sewer-socialists-are-building-an-equitable-internet/). Re: Municipal broadband, this is Evan’s other recent article on the successful municipal broadband in Chattanooga, Tennessee.
     * [VA HOUSE BILL NO. 705](http://lis.virginia.gov/cgi-bin/legp604.exe?181+ful+HB705+hil). Check out the very brief bill for statewide net neutrality in Virginia just produced by the newly elected socialist state legislator and DSA member Lee Carter.
     * [The Internet Should Be a Public Good](https://www.jacobinmag.com/2016/08/internet-public-dns-privatization-icann-netflix/). Ben Tarnoff, co-founder of Logic magazine, writing in Jacobin in 2016 about the public origin of the Internet.
 
