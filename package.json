@@ -16,7 +16,7 @@
   "devDependencies": {
     "browserify": "^15.1.0",
     "onchange": "^3.3.0",
-    "parallelshell": "^3.0.2"
+    "parallelshell": "^3.0.1"
   },
   "repository": {
     "type": "git",
