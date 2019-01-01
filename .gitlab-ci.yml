@@ -2,7 +2,7 @@ image: circleci/ruby:2-node
 
 before_script:
   - sudo apt-get install -y awscli
-  - rm Gemfile.lock && bundle install
+  - bundle install
   - npm install
 
 stages:
