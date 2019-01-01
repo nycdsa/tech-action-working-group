@@ -1,7 +1,7 @@
 ---
 issue: 1
 title: THE INTERNET WE WANT
-category: blog
+category: materials
 ---
 Our first Tech Action event was a success! On December 17, 2017 we co-hosted a panel with Logic Magazine called “The Internet We Want”.
 
