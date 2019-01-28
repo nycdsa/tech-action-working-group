@@ -3,9 +3,9 @@ issue: 1
 title: THE INTERNET WE WANT
 category: materials
 ---
-Our first Tech Action event was a success! On December 17, 2017 we co-hosted a panel with Logic Magazine called “The Internet We Want”.
-
 [![The Internet We Want]({{ "/assets/images/internet-we-want-poster.jpg" | absolute_url }})](https://www.youtube.com/watch?v=PtO4rPPBWjY "The Internet We Want")
+
+Our first Tech Action event was a success! On December 17, 2017 we co-hosted a panel with Logic Magazine called “The Internet We Want”.
 
 The focus of discussion was on the pitfalls of Big Tech and how the Left can seize new opportunities in the wake of its failures to advance a more radical vision for digital democracy. The panel happened to fall on the same week as the FCC's repeal of Net Neutrality so people were eager to get together and discuss a new radical vision for The Internet.
 
@@ -23,4 +23,4 @@ The panel featured:
 
 If you missed it, [check out the video here!](https://www.youtube.com/watch?v=PtO4rPPBWjY)
 
-An check out Logic's photos from the event [here.](https://www.facebook.com/pg/logicisamagazine/photos/?tab=album&album_id=2064005703834118)
+And check out Logic's photos from the event [here.](https://www.facebook.com/pg/logicisamagazine/photos/?tab=album&album_id=2064005703834118)

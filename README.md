@@ -9,6 +9,7 @@ This is just a regular [Jekyll](https://jekyllrb.com) site.
 1. `bundle install`
 2. `npm install`
 3. `npm run build` (OR `npm run watch`)
+4. `bundle exec jekyll serve`
 
 ## Deployment (TODO)
 The app is deployed to S3 with every commit to `master`.
