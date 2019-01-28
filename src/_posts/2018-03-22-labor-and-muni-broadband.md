@@ -9,15 +9,15 @@ For our March meeting we heard from Bob Master, the District 1 Political Directo
 
 We asked him:
 
-**How did neoliberalism in the 80s tip the balance of power in favor of cable/fiber providers and what have labor unions done to fight against them?** 
+**How did neoliberalism in the 80s tip the balance of power in favor of cable/fiber providers and what have labor unions done to fight against them?**
 
 (The anti-trust break-up of Bell Telephone gave way to de-regulation and reconsolidation starting in the 80s and on through to today. For the most part, the unions have fought for better contracts for their workers, but not against expansion.)
 
-**How did the city's deal with Verizon to install fiber internet service ("FiOS") across the entire city come about, and how has Verizon's profit motive led to crappier, unequal service?** 
+**How did the city's deal with Verizon to install fiber internet service ("FiOS") across the entire city come about, and how has Verizon's profit motive led to crappier, unequal service?**
 
 (It came about under the Bloomberg administration in an attempt to bridge the digital divide. It did not take into account affordability, so low-income residents have not benefited from "access." Installation is unequal, but not in the way you would expect—wealthier, historic, less-dense neighborhoods have proven more difficult to wire.)
 
-**How does the feasibility of a hypothetical citywide public broadband internet service in NYC compare to that of the program in Chattanooga, and would organized labor support such a program?** 
+**How does the feasibility of a hypothetical citywide public broadband internet service in NYC compare to that of the program in Chattanooga, and would organized labor support such a program?**
 
 (A. There is no preexisiting grid to lay a new system over in NYC. Chances of the City expropriating broadband infrastructure from Verizon or another bad actor are slim and pretty much unprecedented. B. Unions would fight against a public option that would compete with their employer, and potentially jeopardize their jobs with hard-won salaries and benefits.)
 
@@ -34,11 +34,11 @@ CWA research summary, dated a few years ago, on municipal broadband programs aro
 
 ## Discussion Questions
 
-1. Now that we've heard the labor perspective, how can that guide our thinking on municipal broadband in NY? 
+1. Now that we've heard the labor perspective, how can that guide our thinking on municipal broadband in NY?
 
-2. Is it still a goal we might try to fight for as DSA? 
+2. Is it still a goal we might try to fight for as DSA?
 
-3. What are some steps we can take in that direction? 
+3. What are some steps we can take in that direction?
 
 4. What reforms can we fight for that the union might like to see as well?
 

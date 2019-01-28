@@ -12,13 +12,13 @@ Data collection and analysis is not new. It has long been practiced by banks, in
 We were joined by two speakers to help us sort this out: [Ingrid Burrington](https://www.theatlantic.com/technology/archive/2017/12/could-facebook-be-tried-for-war-crimes/548639/) and [Rob Horning](https://thenewinquiry.com/no-life-stories/).
 
 ## Readings
-1. [The Secrets of Surveillance Capitalism: Google as a Fortune Teller](http://www.faz.net/aktuell/feuilleton/debatten/the-digital-debate/shoshana-zuboff-secrets-of-surveillance-capitalism-14103616.html)
+1. [The Secrets of Surveillance Capitalism: Google as a Fortune Teller](http://www.faz.net/aktuell/feuilleton/debatten/the-digital-debate/shoshana-zuboff-secrets-of-surveillance-capitalism-14103616.html).
 A long piece, but the best at defining what exactly we're talking about, by Shoshana Zuboff, who coined the term "surveillance capitalism."
 
 2. [The Data Is Ours!](https://logicmag.io/04-the-data-is-ours/)
 Our friend, tech journalist and DSA-member Ben Tarnoff, extending the metaphor of "data-as-oil" to examine possible forms of regulation.
 
-3. Bonus readings:
+3. Bonus content:
   * [Capitalism vs. Privacy](https://www.jacobinmag.com/2017/04/google-facebook-informational-capitalism).
   * [Marxist economist and tech historian Evgeny Morzov talk on the digital economy](https://www.youtube.com/watch?v=nJ1W5_OQZLA).
   * [How a Company You’ve Never Heard of Sends You Letters about Your Medical Condition](https://gizmodo.com/how-a-company-you-ve-never-heard-of-sends-you-letters-a-1795643539).
