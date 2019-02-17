@@ -11,7 +11,7 @@ This is just a regular [Jekyll](https://jekyllrb.com) site.
 3. `npm run build` (OR `npm run watch`)
 4. `bundle exec jekyll serve`
 
-## Deployment (TODO)
+## Deployment (ToDo)
 The app is deployed to S3 with every commit to `master`.
 
 Currently it deploys to [this URL](https://d6bn6xyagidmj.cloudfront.net/).
