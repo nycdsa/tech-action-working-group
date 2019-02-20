@@ -3,7 +3,7 @@ issue: 1
 title: AMAZON BACKS OUT OF NYC
 category: materials
 ---
-[![No Amazon NYC]({{ "/assets/images/amazon-backs-out.png" | absolute_url }})]
+![No Amazon NYC]({{ "/assets/images/amazon-backs-out.png" | absolute_url }})
 
 **It's official: [Amazon has cancelled their plans to build their HQ2 in NYC](https://www.nytimes.com/2019/02/14/nyregion/amazon-hq2-queens.html)**
 
