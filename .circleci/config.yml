@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@5.0.2
 
 jobs:
-  build_and_test: # this can be any name you choose
+  build-and-deploy: # this can be any name you choose
     # executor: node/default # use the default executor defined within the orb
     machine: true
     steps:
@@ -32,3 +32,7 @@ jobs:
           root: ~/project
           paths:
             - .
+workflows:
+  test_my_app:
+    jobs:
+      - build-and-deploy
