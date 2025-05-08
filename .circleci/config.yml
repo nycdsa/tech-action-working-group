@@ -1,0 +1,38 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.2
+
+jobs:
+  build-and-deploy: # this can be any name you choose
+    # executor: node/default # use the default executor defined within the orb
+    machine: true
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run:
+          name: Install dependencies
+          command: |
+            sudo apt-get install -y awscli
+            gem install bundler
+            bundle install
+            npm install
+      # - run:
+      #     name: Run tests
+      #     command: |
+      #       npm run test
+      - run:
+          name: Build app
+          command: npm run build
+      - run:
+          name: Sync to S3
+          command: aws s3 sync dist s3://tech-action-working-group/ --delete --exclude "node_modules/*" --exclude "sass/*" --exclude ".git/*"
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - .
+workflows:
+  test_my_app:
+    jobs:
+      - build-and-deploy
