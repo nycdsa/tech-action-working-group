@@ -1,0 +1,47 @@
+version: 2.1
+
+jobs:
+  deploy:
+    docker:
+      - image: cimg/ruby:2.7-node
+    steps:
+      - checkout
+
+      # Install dependencies
+      - run:
+          name: Install AWS CLI
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y awscli
+
+      - run:
+          name: Install Ruby dependencies
+          command: |
+            gem install bundler
+            bundle install
+
+      - run:
+          name: Install Node dependencies
+          command: npm install
+
+      # Build & deploy
+      - run:
+          name: Build project
+          command: npm run build
+
+      - run:
+          name: Sync to S3
+          command: |
+            aws s3 sync dist s3://tech-action-working-group/ \
+              --delete \
+              --exclude "node_modules/*" \
+              --exclude "sass/*" \
+              --exclude ".git/*"
+
+workflows:
+  deploy_workflow:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
