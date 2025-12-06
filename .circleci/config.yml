@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Update package index 
+          command: sudo apt-get update
+      - run:
           name: Install aws
           command: sudo apt-get install -y awscli
       - run:
