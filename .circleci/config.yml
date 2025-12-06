@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2-node
+      - image: cimg/ruby:3.3
     steps:
       - checkout
       - run:
@@ -11,6 +11,9 @@ jobs:
       - run:
           name: Install aws
           command: sudo apt-get install -y awscli
+      - run:
+          name: Update 
+          command: gem update --system
       - run:
           name: Install ruby descriptions
           command: bundle install
