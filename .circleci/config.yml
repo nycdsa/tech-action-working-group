@@ -12,6 +12,9 @@ jobs:
           name: Install aws
           command: sudo apt-get install -y awscli
       - run:
+          name: Update bundler 
+          command: bundle update --bundler
+      - run:
           name: Install ruby descriptions
           command: bundle install
       - run:
