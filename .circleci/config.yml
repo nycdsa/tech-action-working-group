@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:3.3-node
+    steps:
+      - checkout
+      - run:
+          name: Update package index 
+          command: sudo apt-get update
+      - run:
+          name: Install aws
+          command: sudo apt-get install -y awscli
+      - run:
+          name: Install ruby descriptions
+          command: bundle install
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - run:
+          name: Build
+          command: npm run build
+      - deploy:
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ];
+            then aws s3 sync dist s3://tech-action-working-group/ --delete --exclude "node_modules/*" --exclude "sass/*" --exclude ".git/*";
+            else echo "no deploy";
+            fi
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build
