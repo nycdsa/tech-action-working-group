@@ -1,0 +1,34 @@
+---
+issue: 1
+title: Principles on Technology
+category: materials
+author: Tech Action OC
+date: 2025-05-09
+---
+
+**Introduction**
+
+What is technology? We start by taking a broad approach, and define technology as any purposive application of human knowledge and tools that mediates our relationship with the world. Under capitalism, the enclosure and privatization of technology ultimately serves to maximize profit and power for the elite, while robbing society of the collective benefit from and ownership over technologies they build. In the 21st century, this dynamic has precipitated most visibly in the technologies of *information capitalism*, a system where personal data becomes the primary resource to be extracted, commodified and controlled by large digital platforms. The technologies that have developed under this system – social media and communication platforms, the infrastructure of the internet, and artificial intelligence – have spread and impacted the everyday lives of millions of people. Motivated by the shaping of technology under this system, DSA Tech Action sets out to articulate a set of socialist principles that will serve as guidelines for our thinking and practice around technology.
+
+Many of today’s digital technologies are of utility to society and working class people, including the very communication platforms that we use to organize. Indeed, for tools that have become critical infrastructure like the internet, we advocate for free and universal access, and push to bring them under democratic public control. But because of the extensive legacy and ongoing usage of technology as a way to expedite exploitation, as socialists we remain techno-skeptical under the current order. Technological developments under information capitalism have no imperative to serve the interests of society and the working class, often made clear by the myriad of harms accompanying any benefits. As part of our *techno-skepticism*, we reject the idea that the solutions to problems caused by technology are to be solved with more technology, disavow the blind prioritization of increased ‘efficiency’ for its own sake, and highlight how certain digital technologies can harm societal and ecological relationships. Simultaneously, we believe that new technologies should be developed when they are conducive to human flourishing, and emphasize that the benefits of technology must be distributed equitably amongst society. Ultimately, we strive to decrease our dependence on tools manufactured by the global technology industry while exploring collective ways of developing beneficial open source technology. We act in the interest of solidarity with our comrades, as well as for the safety and the sustainability of our own work.
+
+Modern digital technology is increasingly corrosive in its long-term displacement of human labor, irreversible degradation of the environment, oppressive surveillance methods, and most recently, its commodification of human attention and personal data. These negative impacts are always felt first and most directly by folks on the margin, whether they are racialized or poor people, disabled or elderly people, women or LGBTQIA people. Today’s exploitative version of capitalism is inextricable from the technology industry, further enabled by collusion with the state and by its symbiotic relationship with a military-industrial complex implicated in mass atrocities and genocides. In many ways, the modern American technology industry is intimately tied up with centuries of racism, imperialism, policing, and exploitation of the working class.
+
+Digital technology as we know it today is not only the product of a handful of American inventors, engineers and venture capitalists. It is made possible due to decades of labor, communication, creativity, and care performed in-person and online by billions of people, as well as by the planet’s finite and depletable natural resources. This has been most clearly demonstrated with the rise of resource intensive AI systems, which harness immense amounts of human data and labor off  the internet as their most essential building blocks, often without any consent, transparency or renumeration. We see this extraction for what it is – a new form of digital colonialism that violates people's autonomy and privacy over their personal data.  
+
+Data lies at the center of modern information capitalism, with methods for its collection and use never as numerous or advanced as today. We conceive of data as a new means of production, viewing it not only as an individual right to be protected, but as a communal resource to be collectively owned and democratically governed. While the implications of data collection and analysis can be individual (e.g. the loss of privacy, bias in economic and civic engagement, and targeting by law enforcement) the true value of data comes in the aggregate. Recognizing that data has power in aggregate and that efforts centering individual data autonomy alone may fail to safeguard the interests of the working class, we call for collective approaches to managing data. 
+
+Technology must belong to and serve the people. This means building technologies that directly improve the material conditions of society, decrease human suffering, uphold human dignity and strengthen the solidarities that exist among us. As members of the DSA Tech Action group, we believe in what we define as the four principles of tech justice: 
+
+1. **The recognition that technology in our era develops under exploitative information capitalism.**  
+2. **The demand for free and equitable access to beneficial technologies, and the freedom from technologies of harmful extraction.**  
+3. **The call to bring critical technological infrastructure under public ownership and build open-source technologies beyond the imperative of capital.**  
+4. **The right to collective autonomy, consent and ownership over our personal data and how digital technologies utilize it.**   
+
+These principles are not just theoretical tenants; rather, we put them into practice by making the following commitments:
+
+1. **The formation of a robust political education program around technology, accessible to all.**  
+2. **The push towards comprehensive, proactive legislation on digital technology that protects the public from technological harms.**   
+3. **The fostering of collective spaces conducive to building beneficial open source and communal technologies.** 
+
+We apply these principles and commitments in the following eight focus areas to construct a set of specific ideals, positions, remedies and demands. We ground our analysis and examples in the contexts of America and New York City, while keeping our positions applicable in the wider global context of technological development under information capitalism. 
