@@ -15,6 +15,7 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
-facebook: NYCDSATechWG
 twitter: NYCDSATechWG
+instagram: nycdsatechaction
+bluesky: nycdsatech.bsky.social
 email: techaction.nycdsa@gmail.com
