@@ -2,17 +2,22 @@
 	<ul class="social-links-list">
 		<li class="social-links-item">
 			<a href="mailto:{{ site.email }}" class="social-link">
-				{% include mail-svg.html %}
+				{% include envelope-fill-svg.html %}
 			</a>
 		</li>
 		<li class="social-links-item">
-			<a href="https://www.facebook.com/{{ site.facebook }}" target="_blank" class="social-link">
-				{% include fb-svg.html %}
+			<a href="https://bsky.app/profile/{{ site.bluesky }}" target="_blank" class="social-link">
+				{% include bluesky-svg.html %}
 			</a>
 		</li>
 		<li class="social-links-item">
 			<a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="social-link">
-				{% include twitter-svg.html %}
+				{% include twitter-x-svg.html %}
+			</a>
+		</li>
+		<li class="social-links-item">
+			<a href="https://www.instagram.com/{{ site.instagram }}" target="_blank" class="social-link">
+				{% include instagram-svg.html %}
 			</a>
 		</li>
 	</ul>
