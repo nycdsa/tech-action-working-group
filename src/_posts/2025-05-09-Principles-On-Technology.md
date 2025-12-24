@@ -6,6 +6,8 @@ author: Tech Action OC
 date: 2025-05-09
 ---
 
+The following document presents a ratified version of NYC DSA Tech Action's guiding Principles On Technology. Serving as a central ideological reference point and accountability mechanism for our working group, these principles emerged from countless reading group discussions, political education sessions, legislative deliberations and ultimately a formal principles drafting process.
+
 **Introduction**
 
 What is technology? We start by taking a broad approach, and define technology as any purposive application of human knowledge and tools that mediates our relationship with the world. Under capitalism, the enclosure and privatization of technology ultimately serves to maximize profit and power for the elite, while robbing society of the collective benefit from and ownership over technologies they build. In the 21st century, this dynamic has precipitated most visibly in the technologies of *information capitalism*, a system where personal data becomes the primary resource to be extracted, commodified and controlled by large digital platforms. The technologies that have developed under this system – social media and communication platforms, the infrastructure of the internet, and artificial intelligence – have spread and impacted the everyday lives of millions of people. Motivated by the shaping of technology under this system, DSA Tech Action sets out to articulate a set of socialist principles that will serve as guidelines for our thinking and practice around technology.
