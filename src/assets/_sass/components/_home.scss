@@ -263,7 +263,6 @@ body.base .homepage-content {
 		margin-top: 200px;
 		@include viewport(sm) {
 			margin-top: 260px;
-			margin-left: -160px;
 		}
 		z-index: 3;
 		.figure {
@@ -559,7 +558,13 @@ body.base {
 					transition-delay: 100ms;
 				}
 			}
-			&.vr {
+			&.ai {
+				transition-delay: 200ms;
+				@include viewport(sm) {
+					transition-delay: 100ms;
+				}
+			}
+			&.server {
 				transition-delay: 200ms;
 				@include viewport(sm) {
 					transition-delay: 100ms;
