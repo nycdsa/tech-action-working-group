@@ -246,7 +246,6 @@ body.base .homepage-content {
 		}
 		@include viewport(sm) {
 			margin: 0;
-			margin-bottom: 60px;
 		}
 		.figure {
 			background-image: url('/assets/images/pokemon.gif');
@@ -259,12 +258,19 @@ body.base .homepage-content {
 		}
 	}
 	.server {
-		margin-left: -220px;
+		z-index: 2;
+
 		margin-top: 200px;
+		margin-right: 200px;
+		
+
 		@include viewport(sm) {
-			margin-top: 260px;
+			margin: 100;
+			margin-top: 60px;
+			margin-bottom: 60px;
+			margin-right: 0px;
 		}
-		z-index: 3;
+		
 		.figure {
 			background-image: url('/assets/images/server.gif');
 			position: absolute;
