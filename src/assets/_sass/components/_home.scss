@@ -258,12 +258,27 @@ body.base .homepage-content {
 			background-size: cover;
 		}
 	}
-	.big-tech {
+	.server {
 		margin-left: -220px;
 		margin-top: 200px;
 		@include viewport(sm) {
-			margin: 0;
-			margin-bottom: 60px;
+			margin-top: 260px;
+			margin-left: -160px;
+		}
+		z-index: 3;
+		.figure {
+			background-image: url('/assets/images/server.gif');
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-size: cover;
+			background-size: 100% auto;
+			background-position: top center;
+		}
+		.box-text {
+			color: white;
 		}
 	}
 	.vaporwave {
@@ -311,7 +326,7 @@ body.base .homepage-content {
 			background-size: cover
 		}
 		.box-text {
-			top: 200px;
+			top: 80px;
 		}
 	}
 	.nyancat {
@@ -360,6 +375,33 @@ body.base .homepage-content {
 			background-size: cover
 		}
 	}
+	.ai {
+		margin-left: -180px;
+		@include viewport(md) {
+			margin-top: -140px;
+			margin-left: -90px;
+		}
+		@include viewport(sm) {
+			margin: 0;
+		}
+		.figure {
+			background-image: url('/assets/images/ai.gif');
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-size: cover
+		}
+		.box-text {
+			color: white;
+		}
+	}
+
+
+
+
+	
 	.ticker {
 		background-color: $purple;
 		margin-bottom: 400px;
