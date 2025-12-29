@@ -1,0 +1,33 @@
+---
+issue: 1
+title: "Data Centers: What do Working Class New Yorkers Get In Return?"
+category: materials
+author: Tech Action Poli-Ed
+date: 2025-12-27
+---
+
+Data centers were once just the physical locations where your cloud-backed photos and streamed movies used to live. But now, thanks to the advent of crypto and AI, they’ve evolved into behemoth power users estimated to consume up to 326tWh of power annually by 2028\. Big Tech is in an arms race to deliver AI technology competent enough to replace human labor and they want working-class New Yorkers to foot the bill. 
+
+What’s driving this explosion isn’t consumer need. Its enterprise clients: Big Tech, Big Oil, surveillance companies and the AI industry are in a rush to lock in dominance over everything from hiring decisions to government services. Data center infrastructure isn’t being built for us, it’s **built to be used on us.** 
+
+The increased power requirement from data centers is already stymieing gains from newly built renewable energy sources. As reported by the Associated Press, coal-fired power plant closures are being delayed. Elon Musk’s xAI data center bypassed the grid entirely and installed diesel generators and mobile natural gas plants, worsening the air pollution in the city of Memphis, Tennessee. These facilities also draw large amounts of water. As discovered in The Dalles, Oregon, the Google data center there was consuming a whopping quarter of the entire city’s water to cool their servers. Combined with the fact that data centers receive large subsidies and create relatively few jobs, communities are often left to battle these tech monoliths alone. 
+
+Data centers don’t only affect their host communities. The increasing need for energy is straining the grid nationwide resulting in less reliable power delivery, electrical fires, and blackouts. To support the immense power draws, transformers and power lines are in need of upgrades. These costs hit residential consumers of electricity especially hard. Upstate NY saw an extra $80-$160 increase in bills in the late 2010s before the crypto moratorium was put in place. Georgia is seeing a 24% statewide rate hike, one homeowner even reporting that their electric bill has jumped from $250 to $400 after a Meta data center was built near their home. These costs are only set to get worse as more data centers come online. 
+
+The process by which data centers are built receive limited oversight. First, land is rezoned for industrial use through fast-tracked approval processes. Second, meaningful community engagement is notably absent. Public hearings, when they happen at all, often occur after key decisions have already been made, leaving residents with no real voice in the process. Third, companies request substantial public subsidies by promising economic benefits that rarely materialize as advertised. In one particularly striking example, **a local government approved nearly $4 million in subsidies per job for a data center**—a questionable use of public resources by any measure.
+
+Communities are pushing back, and are demanding greater transparency and input. But, there is a clear pattern of data centers minimizing community input or addressing community members well after fundamental decisions have been made. The Western New York Science and Technology Advanced Manufacturing Park, or STAMP,  located in Genesee County is a 1,200+ acre industrial site that sits adjacent to Tonawanda Seneca Nation Reservation Territory and several wildlife refuges. This site is owned and developed by the Genesee County Economic Development Center (GCEDC) who is considering several data center proposals with limited environmental reviews or public hearings. One of its proposals, Project Double Reed, **would require $472 million in public subsidies,  the power equivalent of 700,000 homes, and the water equivalent of 6,000 homes, all while producing an incessant 24/7 drone of data centers cooling systems.** **In exchange, the megacorporation would offer the community a measly 122 jobs.** Unsurprisingly, GCEDC stands to gain $47 \- $79 million in fees from this deal- raising serious questions about who data centers really benefit.
+
+The data center fight is only just beginning.  The grassroots opposition has already catalyzed legislative action at the state level. State Senator Kristen Gonzalez, has already announced two bills to regulate the outsize impact of data centers on communities and working class families: the Sustainable Data Centers Act and the AC/DC Act.
+
+1. The Sustainable Data Centers Act (S6394A), if passed, will require pre-construction disclosure to the Public Service Commission and a minimum of 1 public hearing within the host community. The bill adds a renewables mandate to power consumption, a community discount plan for electric bills and an enforcement fine for developers under violation.  Though there are well known gaps in this bill \- a public hearing does not require the developer to be accountable to the community \- it still represents a first real step towards transparency, and acknowledges the rate burden on frontline communities. 
+
+2. The AC/DC Act (S8640), if passed, would create a separate electricity rate classification for data centers that require more than 20MW of power. Infrastructure upgrade and energy costs are assigned to the data center, protecting residential and small business customers from rate hikes. This bill seeks to stop the subsidy pipeline from low-income ratepayers to tech corporations.
+
+**In combination, these bills will bring transparency and cost protection to New Yorkers where there was none before.**
+
+It’s a much needed start. But even if both bills pass, communities will still lack the ability to say no.there will be no clear water protections or caps on energy consumption. And there’s  no guarantee that host communities get the benefits that data center developers promise. In fact, the track record shows they rarely do. 
+
+The question isn’t whether ChatGPT is useful. It’s whether the wholesale transfer of our land, water, electricity, and tax dollars to an industry that’s actively replacing workers and dodging accountability is good for our communities. 
+
+We know the answer is no. Without stricter measures \- like a moratorium \- the only ones who benefit from data center expansion are the same corporations announcing layoffs every month and pushing to replace human labor with AI. We deserve better and it’s time we began asking for more.
