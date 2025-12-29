@@ -6,7 +6,7 @@ author: Tech Action OC
 date: 2025-05-09
 ---
 
-_The following document presents a ratified version of NYC DSA Tech Action's guiding Principles On Technology. Serving as a central ideological reference point and accountability mechanism for our working group, these principles emerged from countless reading group discussions, political education sessions and legislative deliberations, followed by a formal drafting process._
+_The following document presents a ratified introduction to NYC DSA Tech Action's guiding Principles On Technology. Serving as a central ideological reference point and accountability mechanism for our working group, these principles emerged from countless reading group discussions, political education sessions and legislative deliberations, followed by a formal drafting process._
 
 **Our Principles**
 

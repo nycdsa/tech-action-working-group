@@ -6,7 +6,7 @@ source: src
 destination: dist
 sass:
   sass_dir: assets/_sass
-exclude: ['*.js']
+exclude: []
 permalink: /posts/:slug/
 defaults:
   -
@@ -19,3 +19,4 @@ twitter: NYCDSATechWG
 instagram: nycdsatechaction
 bluesky: nycdsatech.bsky.social
 email: techaction.nycdsa@gmail.com
+calendar_id: 008c087f2e755e8de1e297b1955d22b1df9c8fb6c322bbe657e526777084afb1@group.calendar.google.com
