@@ -2,7 +2,7 @@
 issue: 1
 title: "Data Centers: What do Working Class New Yorkers Get In Return?"
 category: materials
-author: Pragathi Balasubramanian
+author: Katherine Jin, Pragathi Balasubramanian
 date: 2025-12-27
 ---
 
