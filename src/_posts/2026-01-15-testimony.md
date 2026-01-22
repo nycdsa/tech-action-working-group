@@ -3,7 +3,7 @@ issue: 1
 title: "Testimony: Public Hearing on AI Risk"
 category: materials
 author: Shruthi Velidi, Hasan Khan
-date: 2025-12-27
+date: 2026-01-15
 ---
 
 _The following written testimony was submitted for a [public senate hearing](https://www.nysenate.gov/calendar/public-hearings/january-15-2026/public-hearing-discuss-risks-solutions-and-best-practices) held on January 15th, 2026 to discuss risks, solutions, and best practices with respect to the use of artificial intelligence in consequential or high-risk contexts._

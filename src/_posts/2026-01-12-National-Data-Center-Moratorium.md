@@ -3,7 +3,7 @@ issue: 1
 title: "Letter: National Data Center Moratorium"
 category: materials
 author: NYC DSA Tech Action OC
-date: 2025-12-27
+date: 2025-01-12
 ---
 
 The following letter was signed by NYC-DSA Tech Action OC in our fight against rapid data center expansion. Led by Food & Water Watch, more than 230 national, state, and local organizations have signed on to this letter calling Congress for a moratorium on new data centers nationwide until adequate regulations can be enacted to fully protect our communities, our families, our environment and our health. To sign on, [click here](https://docs.google.com/forms/d/e/1FAIpQLSezc6tjpcWcM4MI-R90WE3821Nx4kc6AddXLtKFjRNKITHo3A/viewform).
