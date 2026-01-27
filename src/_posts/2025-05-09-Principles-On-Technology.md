@@ -34,3 +34,7 @@ These principles are not just theoretical tenants; rather, we put them into prac
 3. **The fostering of collective spaces conducive to building beneficial open source and communal technologies.** 
 
 We apply these principles and commitments in the following eight focus areas to construct a set of specific ideals, positions, remedies and demands. We ground our analysis and examples in the contexts of America and New York City, while keeping our positions applicable in the wider global context of technological development under information capitalism. 
+
+## Focus Areas
+
+1. [Open Source Technology]({{ site.baseurl }}{% link _posts/2025-05-09-Tech-Principles-1-Open-Source-Technology.md %})
