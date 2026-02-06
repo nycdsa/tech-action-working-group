@@ -10,6 +10,8 @@ _The following letter was signed by NYC-DSA Tech Action OC in recognition of the
 
 ---
 
+<h2 style="text-align: center;">Memo for Mamdani Transition Team: <br> We Need a Moratorium on Generative AI in NYC Public Schools</h2>
+<br>
   
 **What:** Education advocates, parents, and climate organizations **support a two-year moratorium on generative AI use in NYC public schools.** This moratorium would prevent new DOE contracts for products or curricula that use AI and hit pause on current use of student-facing or student data mining AI products, including those that are embedded in curricula. A moratorium would allow the DOE to establish rigorous  processes for responsibly assessing the risks and impacts of AI on student learning, privacy, and the environment, *before* introducing them in classrooms and schools. 
 
