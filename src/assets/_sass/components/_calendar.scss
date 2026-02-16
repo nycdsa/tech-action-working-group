@@ -14,17 +14,17 @@
 
 	// Desktop: show calendar, hide list
 	.calendar-view-desktop {
-		display: block;
+		display: block !important;
 		@include viewport(sm) {
-			display: none;
+			display: none !important;
 		}
 	}
 
 	// Mobile: hide calendar, show list
 	.calendar-view-mobile {
-		display: none;
+		display: none !important;
 		@include viewport(sm) {
-			display: block;
+			display: block !important;
 		}
 	}
 
@@ -73,8 +73,8 @@
 }
 
 .calendar-grid {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	display: grid !important;
+	grid-template-columns: repeat(7, 1fr) !important;
 	gap: 1px;
 	background-color: $black;
 	border: 2px solid $black;
