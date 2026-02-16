@@ -13,11 +13,31 @@ const API_BASE = 'https://actionnetwork.org/api/v2';
 const OUTPUT_FILE = path.join(__dirname, '../src/_data/actionnetwork_events.json');
 const START_DATE = '2026-01-01'; // Include events from start of 2026
 
+// If API key is missing, try to use existing data file
 if (!API_KEY) {
-	console.error('ERROR: ACTIONNETWORK_API_KEY environment variable is not set');
-	console.error('Please set it before running this script:');
-	console.error('  export ACTIONNETWORK_API_KEY="your-api-key-here"');
-	process.exit(1);
+	console.warn('WARNING: ACTIONNETWORK_API_KEY environment variable is not set');
+	
+	// Check if data file already exists
+	if (fs.existsSync(OUTPUT_FILE)) {
+		console.warn(`Using existing data file: ${OUTPUT_FILE}`);
+		console.warn('To fetch fresh data, set ACTIONNETWORK_API_KEY environment variable');
+		process.exit(0); // Exit successfully, using existing data
+	} else {
+		// No API key and no existing file - create empty array
+		console.warn('No existing data file found. Creating empty events array.');
+		console.warn('To fetch events, set ACTIONNETWORK_API_KEY environment variable');
+		
+		// Ensure output directory exists
+		const outputDir = path.dirname(OUTPUT_FILE);
+		if (!fs.existsSync(outputDir)) {
+			fs.mkdirSync(outputDir, { recursive: true });
+		}
+		
+		// Write empty array
+		fs.writeFileSync(OUTPUT_FILE, JSON.stringify([], null, 2), 'utf8');
+		console.warn(`Created empty events file: ${OUTPUT_FILE}`);
+		process.exit(0); // Exit successfully with empty data
+	}
 }
 
 async function fetchAllEvents() {
