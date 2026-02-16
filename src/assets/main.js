@@ -1,4 +1,3 @@
-'use strict';
 
 // All other modules
 
