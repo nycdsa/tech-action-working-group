@@ -22,12 +22,22 @@ jobs:
           command: npm run build
       - deploy:
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ];
+            if [ "${CIRCLE_BRANCH}" == "master" ] || [ "${CIRCLE_SCHEDULED_BUILD}" == "true" ];
             then aws s3 sync dist s3://tech-action-working-group/ --delete --exclude "node_modules/*" --exclude "sass/*" --exclude ".git/*";
             else echo "no deploy";
             fi
 workflows:
-  version: 2
+  version: 2.1
   deploy:
+    jobs:
+      - build
+  scheduled_build:
+    triggers:
+      - schedule:
+          cron: "0 2 * * *"  # Daily at 2:00 AM UTC
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - build
