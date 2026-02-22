@@ -14,5 +14,5 @@ This is just a regular [Jekyll](https://jekyllrb.com) site.
 ## Deployment 
 The app is deployed via CircleCI with every commit to `master`.
 
-Currently it deploys to [this URL](https://d6bn6xyagidmj.cloudfront.net/).
+Currently it deploys to [this URL](https://d6bn6xyagidmj.cloudfront.net/). 
 
