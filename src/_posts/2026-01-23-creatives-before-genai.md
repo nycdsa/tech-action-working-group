@@ -8,7 +8,7 @@ date: 2026-01-23
 
 _The following resolution was passed by Tech Action on January 23rd, 2026 regarding the use of GenAI tools in NYC-DSA. The resolution passed with 83% in favor and 17% against the resolution._
 
-# **Introduction**
+# **Introduction** 
 
 As is detailed in the national DSA policy [R02: No AI Images\!](https://discussion.dsausa.org/t/r02-no-ai-images/42045), Generative Artificial Intelligence (AI) models are trained using the works of artists, musicians, authors, and many more creatives. The vast majority of these creators did not consent to have their work being used in training AI and most importantly they were not fairly compensated for their work. This represents a massive transfer of wealth from the working-class to tech billionaires.
 
