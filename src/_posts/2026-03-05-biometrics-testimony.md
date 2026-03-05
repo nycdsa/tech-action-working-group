@@ -24,7 +24,7 @@ The Council should pass Int. 0213-2026 after addressing the aforementioned conce
 Erik Sandahl, Hasan Khan, Raaid, Samuel Whalen, Shruthi Velidi, Sohini Upadhyay, Tiffany W
 
 **References:**  
-\[1\] [https://techaction.nyc/](https://techaction.nyc/)  
+\[1\] [Int. 0213-2026](https://legistar.council.nyc.gov/LegislationDetail.aspx?ID=6557556&GUID=E67A1D7D-5245-4373-B5FF-1AD968E3383F)  
 \[2\] [Bias in data-driven artificial intelligence systems—An introductory survey](https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1356)  
 \[3\] [What Makes a Dark Pattern... Dark?](https://dl.acm.org/doi/epdf/10.1145/3411764.3445610)  
 \[4\] [The FTC and the CPRA’s Regulation of Dark Patterns in Cookie Consent Notices](https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=1019&&context=ucblr&&sei-redir=1&referer=https%253A%252F%252Fscholar.google.com%252Fscholar%253Fhl%253Den%2526as_sdt%253D0%25252C33%2526q%253Dregulation%252Bconsent%252Bdark%252Bpatterns%2526btnG%253D#search=%22regulation%20consent%20dark%20patterns%22)  
