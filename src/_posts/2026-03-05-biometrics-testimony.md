@@ -2,11 +2,11 @@
 issue: 1
 title: "Testimony: Biometrics Bill"
 category: materials
-author: NYC DSA Tech Action OC
+author: NYC DSA Tech Action Pollicy & Advocacy
 date: 2026-03-05
 ---
 
-_**The NYCDSA Tech Action working group supports the passing of Int. 0213-2026** \[1\]. The following testimony was submitted on March 4th 2026 and preceded by an earlier version of presented at City Council on March 2nd 2026._
+_**The NYCDSA Tech Action working group supports the passing of Int. 0213-2026 with key modifications** \[1\]. The following testimony was submitted on March 4th 2026 and preceded by an earlier version of presented at City Council on March 2nd 2026._
 
 ---
 
