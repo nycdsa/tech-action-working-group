@@ -27,7 +27,7 @@ Technology must belong to and serve the people. This means building technologies
 3. **The call to bring critical technological infrastructure under public ownership and build open-source technologies beyond the imperative of capital.**  
 4. **The right to collective autonomy, consent and ownership over our personal data and how digital technologies utilize it.**   
 
-These principles are not just theoretical tenants; rather, we put them into practice by making the following commitments:
+These principles are not just theoretical tenets; rather, we put them into practice by making the following commitments:
 
 1. **The formation of a robust political education program around technology, accessible to all.**  
 2. **The push towards comprehensive, proactive legislation on digital technology that protects the public from technological harms.**   
@@ -38,3 +38,10 @@ We apply these principles and commitments in the following eight focus areas to 
 ## Focus Areas
 
 1. [Open Source Technology]({{ site.baseurl }}{% link _posts/2025-05-09-Tech-Principles-1-Open-Source-Technology.md %})
+2. [Internet for All]
+3. [Social Media for Society]
+4. [Privacy & Surveillance]
+5. [Artifical Intelligence]
+6. [Automation & Labor]
+7. [Digital Colonialism & Militarization]
+8. [Environmental Justice]
