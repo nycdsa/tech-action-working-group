@@ -27,10 +27,21 @@ Technology must belong to and serve the people. This means building technologies
 3. **The call to bring critical technological infrastructure under public ownership and build open-source technologies beyond the imperative of capital.**  
 4. **The right to collective autonomy, consent and ownership over our personal data and how digital technologies utilize it.**   
 
-These principles are not just theoretical tenants; rather, we put them into practice by making the following commitments:
+These principles are not just theoretical tenets; rather, we put them into practice by making the following commitments:
 
 1. **The formation of a robust political education program around technology, accessible to all.**  
 2. **The push towards comprehensive, proactive legislation on digital technology that protects the public from technological harms.**   
 3. **The fostering of collective spaces conducive to building beneficial open source and communal technologies.** 
 
-We apply these principles and commitments to the technologies and issues of our time to construct a set of specific ideals, positions, remedies and demands. We ground our analysis and examples in the contexts of America and New York City, while keeping our positions applicable in the wider global context of technological development under information capitalism. 
+We apply these principles and commitments in the following eight focus areas to construct a set of specific ideals, positions, remedies and demands. We ground our analysis and examples in the contexts of America and New York City, while keeping our positions applicable in the wider global context of technological development under information capitalism. 
+
+## Focus Areas
+
+1. [Open Source Technology]({{ site.baseurl }}{% link _posts/2025-05-09-Tech-Principles-1-Open-Source-Technology.md %})
+2. [Internet for All]
+3. [Social Media for Society]
+4. [Privacy & Surveillance]
+5. [Artifical Intelligence]
+6. [Automation & Labor]
+7. [Digital Colonialism & Militarization]
+8. [Environmental Justice]
