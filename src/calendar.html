@@ -3,35 +3,373 @@ layout: base
 permalink: /calendar/
 ---
 
-<div class="container isolated scroll-trigger" data-scroll-offset="-200">
+<div class="container">
 
-	{% if site.calendar_id and site.calendar_id != '' %}
-		<div style="background-color: white; padding: 20px; border: 5px solid #000; margin-bottom: 30px;">
-			<iframe 
-				src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src={{ site.calendar_id | url_encode }}&color=%23EC1F27" 
-				style="border-width:0; width:100%; height:600px;" 
-				frameborder="0" 
-				scrolling="no">
-			</iframe>
+	{% assign events = site.data.actionnetwork_events %}
+
+	{% if events and events.size > 0 %}
+		<div class="calendar-container">
+
+			{% comment %} Group events by month {% endcomment %}
+			{% assign months = "" | split: "," %}
+			{% for ev in events %}
+				{% if ev.start %}
+					{% assign month_key = ev.start | date: "%Y-%m" %}
+					{% unless months contains month_key %}
+						{% assign months = months | push: month_key %}
+					{% endunless %}
+				{% endif %}
+			{% endfor %}
+			{% assign months = months | sort %}
+
+			{% comment %} Desktop Calendar View {% endcomment %}
+			<div class="calendar-view-desktop">
+				<div class="calendar-header">
+					<button type="button" class="calendar-nav calendar-nav-prev" aria-label="Previous month">
+						&#x2039;
+					</button>
+					<div class="month-header" id="calendar-month-label"></div>
+					<button type="button" class="calendar-nav calendar-nav-next" aria-label="Next month">
+						&#x203A;
+					</button>
+				</div>
+
+				<div class="calendar-grid" id="calendar-grid">
+					<!-- Calendar days will be rendered by JavaScript -->
+				</div>
+			</div>
+
+			{% comment %} Mobile List View {% endcomment %}
+			<div class="calendar-view-mobile">
+				<ul class="events-list-mobile">
+					{% for ev in events %}
+						{% if ev.start %}
+							<li class="event-item-mobile" data-event-start="{{ ev.start }}">
+								<div class="event-date-mobile">
+									{% assign start = ev.start | date: "%a, %b %-d" %}
+									{{ start }}
+								</div>
+								<div class="event-content-mobile">
+									<h3 class="event-title-mobile">
+										{% if ev.url %}
+											<a href="{{ ev.url }}" target="_blank" rel="noopener">{{ ev.title }}</a>
+										{% else %}
+											{{ ev.title }}
+										{% endif %}
+									</h3>
+									{% if ev.start %}
+										{% assign start_time = ev.start | date: "%-l:%M %p" %}
+										<div class="event-time-mobile">{{ start_time }}</div>
+									{% endif %}
+									{% if ev.location %}
+										<div class="event-location-mobile">{{ ev.location }}</div>
+									{% endif %}
+								</div>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+				<div class="no-upcoming-events-mobile" style="display: none; padding: 40px 20px; text-align: center;">
+					<p><strong>No upcoming events</strong></p>
+					<p>Check back soon for new events!</p>
+				</div>
+			</div>
 		</div>
+
+		<script>
+			(function() {
+				// Event data from Jekyll
+				const eventData = [
+					{% assign events_with_dates = "" | split: "," %}
+					{% for ev in events %}
+						{% if ev.start %}
+							{% assign events_with_dates = events_with_dates | push: ev %}
+						{% endif %}
+					{% endfor %}
+					{% for ev in events_with_dates %}
+					{
+						id: {{ ev.id | jsonify }},
+						title: {{ ev.title | jsonify }},
+						start: {{ ev.start | jsonify }},
+						url: {{ ev.url | jsonify }},
+						location: {{ ev.location | jsonify }}
+					}{% unless forloop.last %},{% endunless %}
+					{% endfor %}
+				];
+
+				// Month metadata from Jekyll
+				const months = [
+					{% for month_key in months %}
+					{
+						key: "{{ month_key }}",
+						label: "{{ month_key | append: '-01' | date: "%B %Y" }}"
+					}{% unless forloop.last %},{% endunless %}
+					{% endfor %}
+				];
+
+				const currentMonthKey = "{{ "now" | date: "%Y-%m" }}";
+				let currentMonthIndex = months.findIndex(m => m.key === currentMonthKey);
+				if (currentMonthIndex === -1) currentMonthIndex = 0;
+
+				// Helper functions
+				function getDayOfWeek(date) {
+					return date.getDay();
+				}
+
+				function getDaysInMonth(year, month) {
+					return new Date(year, month + 1, 0).getDate();
+				}
+
+				// Add 5 hours to EST time (hardcoded offset)
+				function addESTOffset(date) {
+					return new Date(date.getTime() + (5 * 60 * 60 * 1000));
+				}
+
+				// Render calendar for a month
+				function renderCalendar(monthMeta, eventsForMonth) {
+					const monthKey = monthMeta.key;
+					const [year, month] = monthKey.split('-').map(Number);
+					const monthIndex = month - 1;
+
+					const grid = document.getElementById('calendar-grid');
+					const monthLabel = document.getElementById('calendar-month-label');
+					if (!grid || !monthLabel) return;
+
+					// Update header label
+					monthLabel.textContent = monthMeta.label;
+
+					// Clear existing cells
+					grid.innerHTML = '';
+
+					// Add day-of-week headers
+					const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+					dayNames.forEach(name => {
+						const headerCell = document.createElement('div');
+						headerCell.className = 'calendar-day-header';
+						headerCell.textContent = name;
+						grid.appendChild(headerCell);
+					});
+					
+					const firstDay = new Date(year, monthIndex, 1);
+					const daysInMonth = getDaysInMonth(year, monthIndex);
+					const startDayOfWeek = getDayOfWeek(firstDay);
+					
+					const today = new Date();
+					const isCurrentMonth = today.getFullYear() === year && today.getMonth() === monthIndex;
+					
+					// Group events by date
+					const eventsByDate = {};
+					eventsForMonth.forEach(ev => {
+						if (ev.start) {
+							const date = addESTOffset(new Date(ev.start));
+							const dateKey = date.getDate();
+							if (!eventsByDate[dateKey]) {
+								eventsByDate[dateKey] = [];
+							}
+							eventsByDate[dateKey].push(ev);
+						}
+					});
+					
+					// Add empty cells for days before the 1st
+					for (let i = 0; i < startDayOfWeek; i++) {
+						const emptyDay = document.createElement('div');
+						emptyDay.className = 'calendar-day empty';
+						grid.appendChild(emptyDay);
+					}
+					
+					// Add cells for each day of the month
+					for (let day = 1; day <= daysInMonth; day++) {
+						const dayCell = document.createElement('div');
+						const isToday = isCurrentMonth && day === today.getDate();
+						dayCell.className = 'calendar-day' + (isToday ? ' today' : '');
+						
+						const dayNumber = document.createElement('div');
+						dayNumber.className = 'day-number';
+						dayNumber.textContent = day;
+						dayCell.appendChild(dayNumber);
+						
+						if (eventsByDate[day]) {
+							const eventList = document.createElement('ul');
+							eventList.className = 'event-list';
+							
+							// Show up to 2 events, then indicate more
+							const eventsToShow = eventsByDate[day].slice(0, 2);
+							const hasMore = eventsByDate[day].length > 2;
+							
+							const todayForComparison = new Date();
+							todayForComparison.setHours(0, 0, 0, 0);
+							
+							eventsToShow.forEach(ev => {
+								const eventItem = document.createElement('li');
+								eventItem.className = 'event-item';
+								
+								// Check if event is in the past
+								let isPastEvent = false;
+								if (ev.start) {
+									const eventDate = addESTOffset(new Date(ev.start));
+									const eventDateOnly = new Date(eventDate);
+									eventDateOnly.setHours(0, 0, 0, 0);
+									isPastEvent = eventDateOnly < todayForComparison;
+								}
+								
+								if (ev.url) {
+									const eventLink = document.createElement('a');
+									eventLink.href = ev.url;
+									eventLink.target = '_blank';
+									eventLink.rel = 'noopener';
+									eventLink.className = 'event-link' + (isPastEvent ? ' event-link-past' : '');
+									eventLink.textContent = ev.title;
+									eventItem.appendChild(eventLink);
+									
+									// Add time if available
+									if (ev.start) {
+										const eventDate = addESTOffset(new Date(ev.start));
+										const timeStr = eventDate.toLocaleTimeString('en-US', { 
+											hour: 'numeric', 
+											minute: '2-digit',
+											hour12: true 
+										});
+										const timeSpan = document.createElement('div');
+										timeSpan.className = 'event-time';
+										timeSpan.textContent = timeStr;
+										eventItem.appendChild(timeSpan);
+									}
+								} else {
+									const eventTitle = document.createElement('div');
+									eventTitle.className = 'event-link' + (isPastEvent ? ' event-link-past' : '');
+									eventTitle.textContent = ev.title;
+									eventItem.appendChild(eventTitle);
+								}
+								
+								eventList.appendChild(eventItem);
+							});
+							
+							if (hasMore) {
+								const moreIndicator = document.createElement('div');
+								moreIndicator.className = 'multiple-events-indicator';
+								moreIndicator.textContent = '+' + (eventsByDate[day].length - 2) + ' more';
+								dayCell.appendChild(moreIndicator);
+							}
+							
+							dayCell.appendChild(eventList);
+						}
+						
+						grid.appendChild(dayCell);
+					}
+				}
+
+				function showMonth(index) {
+					if (!months.length) return;
+
+					if (index < 0) index = 0;
+					if (index >= months.length) index = months.length - 1;
+					currentMonthIndex = index;
+
+					const monthMeta = months[currentMonthIndex];
+
+					const monthEvents = eventData.filter(ev => {
+						if (!ev.start) return false;
+						const evDate = addESTOffset(new Date(ev.start));
+						const evMonthKey = evDate.getFullYear() + '-' +
+							String(evDate.getMonth() + 1).padStart(2, '0');
+						return evMonthKey === monthMeta.key;
+					});
+
+					renderCalendar(monthMeta, monthEvents);
+
+					// Update nav button disabled state
+					const prevBtn = document.querySelector('.calendar-nav-prev');
+					const nextBtn = document.querySelector('.calendar-nav-next');
+					if (prevBtn) prevBtn.disabled = currentMonthIndex === 0;
+					if (nextBtn) nextBtn.disabled = currentMonthIndex === months.length - 1;
+				}
+
+				// Wire up navigation
+				const prevBtn = document.querySelector('.calendar-nav-prev');
+				const nextBtn = document.querySelector('.calendar-nav-next');
+
+				if (months.length) {
+					showMonth(currentMonthIndex);
+
+					if (prevBtn) {
+						prevBtn.addEventListener('click', function() {
+							if (currentMonthIndex > 0) {
+								showMonth(currentMonthIndex - 1);
+							}
+						});
+					}
+
+					if (nextBtn) {
+						nextBtn.addEventListener('click', function() {
+							if (currentMonthIndex < months.length - 1) {
+								showMonth(currentMonthIndex + 1);
+							}
+						});
+					}
+				}
+
+				// Update mobile list dates with EST offset and filter to show only upcoming events
+				const today = new Date();
+				today.setHours(0, 0, 0, 0); // Set to start of today for comparison
+				
+				let upcomingCount = 0;
+				
+				document.querySelectorAll('.event-item-mobile').forEach(item => {
+					const dateEl = item.querySelector('.event-date-mobile');
+					const timeEl = item.querySelector('.event-time-mobile');
+					const eventStart = item.dataset.eventStart;
+					
+					if (eventStart) {
+						const eventDate = addESTOffset(new Date(eventStart));
+						const eventDateOnly = new Date(eventDate);
+						eventDateOnly.setHours(0, 0, 0, 0); // Set to start of day for comparison
+						
+						// Hide past events (events before today)
+						if (eventDateOnly < today) {
+							item.style.display = 'none';
+							return;
+						}
+						
+						upcomingCount++;
+						
+						// Update date
+						if (dateEl) {
+							const dateStr = eventDate.toLocaleDateString('en-US', {
+								weekday: 'short',
+								month: 'short',
+								day: 'numeric'
+							});
+							dateEl.textContent = dateStr;
+						}
+						
+						// Update time
+						if (timeEl) {
+							const timeStr = eventDate.toLocaleTimeString('en-US', {
+								hour: 'numeric',
+								minute: '2-digit',
+								hour12: true
+							});
+							timeEl.textContent = timeStr;
+						}
+					}
+				});
+				
+				// Show "no upcoming events" message if no events are visible
+				const noEventsMsg = document.querySelector('.no-upcoming-events-mobile');
+				if (noEventsMsg) {
+					noEventsMsg.style.display = upcomingCount === 0 ? 'block' : 'none';
+				}
+			})();
+		</script>
 	{% else %}
 		<div style="background-color: white; padding: 40px; margin-bottom: 30px; border: 5px solid #000;">
-			<p><strong>Calendar Setup Required</strong></p>
-			<p>To display your Google Calendar events, you'll need to:</p>
-			<ol style="padding-left: 30px; list-style-type: decimal;">
-				<li>Make your Google Calendar public (or share it publicly)</li>
-				<li>Get your Calendar ID from Google Calendar settings</li>
-				<li>Add your Calendar ID to <code>_config.yml</code> as <code>calendar_id: your-calendar-id-here</code></li>
-			</ol>
-			<p><strong>How to find your Calendar ID:</strong></p>
-			<ol style="padding-left: 30px; list-style-type: decimal;">
-				<li>Go to <a href="https://calendar.google.com" target="_blank">Google Calendar</a></li>
-				<li>Click the three dots next to your calendar name</li>
-				<li>Select "Settings and sharing"</li>
-				<li>Scroll down to "Integrate calendar"</li>
-				<li>Copy the "Calendar ID" (it will look like <code>example@gmail.com</code> or <code>abc123@group.calendar.google.com</code>)</li>
-			</ol>
-			<p>Once you've added the Calendar ID to <code>_config.yml</code>, rebuild the site and the calendar will appear here.</p>
+			<p><strong>No upcoming events found.</strong></p>
+			<p>This calendar is powered by ActionNetwork events fetched at build time.</p>
+			<ul style="padding-left: 30px; list-style-type: disc;">
+				<li>Make sure you have upcoming events in ActionNetwork.</li>
+				<li>Confirm the <code>ACTIONNETWORK_API_KEY</code> environment variable is set when running <code>npm run build</code>.</li>
+			</ul>
+			<p>After updating your events or configuration, rebuild and redeploy the site to refresh this calendar.</p>
 		</div>
 	{% endif %}
 </div>
