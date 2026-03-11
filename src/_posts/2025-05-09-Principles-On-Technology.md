@@ -38,10 +38,10 @@ We apply these principles and commitments in the following eight focus areas to 
 ## Focus Areas
 
 1. [Open Source Technology]({{ site.baseurl }}{% link _posts/2025-05-09-Tech-Principles-1-Open-Source-Technology.md %})
-2. [Internet for All]
-3. [Social Media for Society]
-4. [Privacy & Surveillance]
-5. [Artifical Intelligence]
-6. [Automation & Labor]
-7. [Digital Colonialism & Militarization]
-8. [Environmental Justice]
+2. Internet for All
+3. Social Media for Society
+4. Privacy & Surveillance
+5. Artifical Intelligence
+6. Automation & Labor
+7. Digital Colonialism & Militarization
+8. Environmental Justice
