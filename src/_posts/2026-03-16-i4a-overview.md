@@ -8,8 +8,6 @@ date: 2026-03-16
 
 [![Internet For All]({{ "/assets/images/i4a-banner.png" | absolute_url }})](https://internetforall.nyc "Internet For All")
 
-# [`THE INTERNET IS BROKEN. NYC CAN FIX IT.`](https://internetforall.nyc/)
-
 New York City has an internet problem. Applying for a job. Helping your kid with homework. Scheduling a doctor’s appointment. For millions of New Yorkers, these seemingly straightforward tasks become impossible \- or impossibly expensive thanks to the lack of broadband access.
 
 Internet access in this city tracks race and class with brutal precision. [Nearly](https://nycfuture.org/research/understanding-and-overcoming-the-bronx-digital-divide) 1 in 4 Bronx households lack broadband, almost double Manhattan’s rate. When federal subsidies ended in 2024, 44% of Bronx households lost their connection overnight. 
