@@ -1,9 +1,12 @@
 ---
-title: THE INTERNET IS BROKEN. NYC CAN FIX IT.
-category: Internet 4 All
+title: The Internet Is Broken. NYC Can Fix It.
+category: Internet For All
+author: Katherine Jin & Pragathi Balasubramanian
 date: 2026-03-16
 
 ---
+
+[![Internet For All]({{ "/assets/images/i4a-banner.png" | absolute_url }})](https://internetforall.nyc "Internet For All")
 
 # [**`THE INTERNET IS BROKEN. NYC CAN FIX IT.`](https://internetforall.nyc/)**
 
