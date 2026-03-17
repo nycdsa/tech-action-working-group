@@ -1,5 +1,4 @@
 ---
-issue: 1
 title: Principles on Technology: Open Source
 category: materials
 author: Tech Action OC

@@ -1,9 +1,9 @@
 ---
-title: The Internet Is Broken. NYC Can Fix It.
-category: Internet For All
+issue: 1
+title: "The Internet Is Broken. NYC Can Fix It."
+category: materials
 author: Katherine Jin & Pragathi Balasubramanian
 date: 2026-03-16
-
 ---
 
 [![Internet For All]({{ "/assets/images/i4a-banner.png" | absolute_url }})](https://internetforall.nyc "Internet For All")
