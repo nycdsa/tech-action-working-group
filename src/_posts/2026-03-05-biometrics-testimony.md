@@ -2,7 +2,7 @@
 issue: 1
 title: "Testimony: Biometrics Bill"
 category: materials
-author: NYC DSA Tech Action Pollicy & Advocacy
+author: NYC DSA Tech Action Policy & Advocacy
 date: 2026-03-05
 ---
 

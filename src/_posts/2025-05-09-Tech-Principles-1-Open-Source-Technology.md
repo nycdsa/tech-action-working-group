@@ -1,6 +1,5 @@
 ---
-issue: 1
-title: Principles on Technology: Open Source
+title: "Principles on Technology: Open Source"
 category: materials
 author: Tech Action OC
 date: 2025-05-09
